@@ -67,4 +67,28 @@ body {
   border-left: 5px solid #007BFF;
 }
 
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.contact-list a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
