@@ -8,11 +8,13 @@
 
 ## Screenshots
 
-![Home Section](images/home_section.png)
+
 
 ![About Me](images/bio_section.png)
 
 ![Contact Section](images/contact_section.png)
+
+![Home Section](images/home_section.png)
 
 ## 📋 Project Progress
 
