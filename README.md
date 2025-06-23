@@ -8,17 +8,26 @@
 
 ## Screenshots
 
-![Home Page](images/homepage.png)
+![Home Section](images/home_section.png)
+
+![About Me](images/bio_section.png)
+
+![Contact Section](images/contact_section.png)
 
 ## 📋 Project Progress
 
-| Task                             | Status |
-|----------------------------------|--------|
-| Created repo                     | ✅      |
-| Added personal info              | ✅      |
-| Created contact section          | ✅      |
-| Styled with CSS                  | ✅      |
-| Deployed with GitHub Pages       | ✅      |
+| Task                              | Status |
+|-----------------------------------|--------|
+| Created GitHub repo               | ✅     |
+| Set milestone + issues            | ✅     |
+| README.md written                 | ✅     |
+| Created 3+ feature branches       | ✅     |
+| Linked commits to issues          | ✅     |
+| Opened & merged PRs               | ✅     |
+| Site deployed via GitHub Pages    | ✅     |
+| Deployment link added to README.md| ✅     |
+| Milestone progress at 100%        | ✅     |
+
 
 
 
