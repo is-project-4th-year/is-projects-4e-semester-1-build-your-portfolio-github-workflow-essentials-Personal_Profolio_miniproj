@@ -29,7 +29,7 @@
 | Linked commits to issues          | ✅     |
 | Opened & merged PRs               | ✅     |
 | Site deployed via GitHub Pages    | ✅     |
-| Deployment link added to README.md| ✅     |
+| Deployment link added to README.md|        |
 | Milestone progress at 100%        | ✅     |
 
 
