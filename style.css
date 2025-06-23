@@ -1,0 +1,70 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #eef2f7;
+  color: #333;
+}
+
+.personal-details {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  max-width: 800px;
+  width: 100%;
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.details-list li {
+  padding: 8px 0;
+}
+
+.bio {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #007BFF;
+}
+
+
