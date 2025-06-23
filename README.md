@@ -2,9 +2,13 @@
 
 ## Project Title - Zahabiya's Portfolio
 
+## Project Description
+
+This project is a personal portfolio website which includes sections like Home, Personal Details and Contact. It was built using HTML and CSS and version-controlled using Git and GitHub.
+
 ##  Live Site
 
-🔗 [Click here to view my portfolio](https://yourusername.github.io/your-repo-name/)
+[Click here to view my portfolio](https://yourusername.github.io/your-repo-name/)
 
 ## Screenshots
 
