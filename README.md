@@ -12,7 +12,7 @@
 
 ![About Me](images/bio_section.png)
 
-![Contact Section](images/contact_section_2.png)
+![Contact Section](images/contact_section.png)
 
 
 
