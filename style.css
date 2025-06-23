@@ -92,3 +92,22 @@ body {
 .contact-list a:hover {
   text-decoration: underline;
 }
+.home-section {
+  background-color: #f0f4ff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-card h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
