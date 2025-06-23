@@ -14,6 +14,8 @@
 
 ![Contact Section](images/contact_section.png)
 
+![Favicon Section](images/favicon_website.png)
+
 
 
 ## 📋 Project Progress
