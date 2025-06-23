@@ -8,7 +8,7 @@
 
 ## Screenshots
 
-![Home Section](images/home_section.png)
+![Home Section](images/home_section2.png)
 
 ![About Me](images/bio_section.png)
 
