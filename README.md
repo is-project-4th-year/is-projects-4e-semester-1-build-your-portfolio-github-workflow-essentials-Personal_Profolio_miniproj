@@ -1,41 +1,99 @@
-# Full Name - Essajee Zahabiya Shamoon (148252)
 
-## Project Title - Zahabiya's Portfolio
+# 🌐 Personal Portfolio Project Assignment
 
-## Project Description
+Welcome to your **Personal Portfolio Project**! This assignment is designed to help you practice core GitHub and project management skills, including milestones, issues, project boards, branching, commit conventions, pull requests, and resolving merge conflicts.
 
-This project is a personal portfolio website which includes sections like Home, Personal Details and Contact. It was built using HTML and CSS and version-controlled using Git and GitHub.
+---
 
-##  Live Site
+## 📌 Project Management Guidelines
 
-[Click here to view my portfolio](https://yourusername.github.io/your-repo-name/)
+### ✅ Milestones
+Define major phases or deliverables of your portfolio (e.g., Landing Page, Team Profiles, Admin Panel).
 
-## Screenshots
+### ✅ Issues
+Break each milestone into manageable tasks. Link these issues to their related milestone for better tracking.
 
-![Home Section](images/home_section_2.png)
+### ✅ Project Board
+Create a GitHub project board with columns like:
+- `To Do`
+- `In Progress`
+- `Done`
 
-![About Me](images/bio_section.png)
+Assign tasks and pull requests to the appropriate columns.
 
-![Contact Section](images/contact_section.png)
+---
 
-![Favicon Section](images/favicon_website.png)
+## 🔧 Git Workflow
 
+### 🔀 Branching
+Use feature branches for each issue. Adopt a consistent naming format such as:
 
+```
+feature/<issue-number>-short-description
+```
 
-## 📋 Project Progress
+### 💬 Commits
+Use structured, meaningful commit messages:
 
-| Task                              | Status |
-|-----------------------------------|--------|
-| Created GitHub repo               | ✅     |
-| Set milestone + issues            | ✅     |
-| README.md written                 | ✅     |
-| Created 3+ feature branches       | ✅     |
-| Linked commits to issues          | ✅     |
-| Opened & merged PRs               | ✅     |
-| Site deployed via GitHub Pages    | ✅     |
-| Deployment link added to README.md|        |
-| Milestone progress at 100%        | ✅     |
+```
+<type>(<optional scope>): <short description>
 
+<body>
 
+<footer>
+```
+
+**Commit Types: `(use at least 6 of these)`**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation changes
+- `style`: Formatting, white space, etc.
+- `refactor`: Code restructure (no feature or bug)
+- `perf`: Performance improvement
+- `test`: Test-related updates
+- `chore`: Non-code updates (e.g., config)
+- `build`: Build system or dependency changes
+- `ci`: Continuous integration changes
+
+**Example:**
+```
+feat(portfolio): add responsive navigation bar
+
+Added a mobile-first responsive nav using Flexbox.
+
+Closes #45
+```
+
+---
+
+## 🔄 Pull Requests & Merge Conflicts
+
+- Open a PR for each feature branch.
+- Link the PR to its corresponding issue.
+- Request reviews before merging.
+- Document any merge conflict resolution in the PR or commit message.
+
+---
+
+## 🚀 Deployment & Documentation
+
+- Keep the `main` branch always deployable.
+- Deploy using GitHub Pages (mandatory) and any suitable platform (optional).
+- Complete the `Assignment.md` file in this repository by addressing all listed requirements. This document will be used for evaluation.
+---
+
+## 📥 Submission Checklist
+
+Before submitting your project, ensure the following:
+
+- [ ] Defined milestones for key features
+- [ ] Created and linked issues to milestones
+- [ ] Organized a GitHub project board (To Do / In Progress / Done)
+- [ ] Used structured commit messages
+- [ ] Created separate feature branches for tasks
+- [ ] Opened and merged PRs with meaningful descriptions
+- [ ] Demonstrated conflict resolution (Simulate atleast one)
+- [ ] Deployed the portfolio online
+- [ ] Completed and updated the `Assignment.md` file which will be marked and graded
 
 
