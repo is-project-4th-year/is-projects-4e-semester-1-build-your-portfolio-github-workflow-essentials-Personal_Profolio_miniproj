@@ -2,9 +2,9 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Essajee Zahabiya Shamoon
+- **GitHub Username**: ZahaEssa
+- **Email**: zahabiya.essajee@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
@@ -13,12 +13,13 @@
 
 ## 3. Learnings from the Git Crash Program
 
-List at least **four key concepts or skills** you learned during the Git crash course. For each one, write a brief explanation of how it helped you manage your portfolio project more effectively.
 
-Example format:
 
-- **Branching**: Helped me separate features and prevent conflicts when working on different sections of the site.
-- _(Continue with other concepts…)_
+- **1. Creating Issues and Milestones in GitHub**:I learned how to break down my work into small tasks using issues, and group them under milestones to plan and track my progress effectively.
+- **2. Using Branches to Work on Features Separately**:I learned to create separate branches for each feature , which helps avoid conflicts and keeps the main code clean and stable.
+- **3.  Writing Clear Commit Messages and Referencing Issue**:I learned to write short and clear commit messages that describe what I changed, and to link them to issues to keep everything connected and easy to understand.
+- **4.  Creating and Managing Pull Requests Before Merging Code**:I learned how to use pull requests to review code changes before merging, which improves code quality.
+
 
 ## 4. Screenshots of Key GitHub Features
 
@@ -33,19 +34,27 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 
 ### A. Milestones and Issues
 
-- Screenshot showing your milestone(s) and the issues linked to it.
+![image](https://github.com/user-attachments/assets/7ba708a5-b629-4e5c-bd9b-c05cc0ba3ad1)
+
+
+
 
 ### B. Project Board
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
+![image](https://github.com/user-attachments/assets/2f5dbd14-5c21-4279-8be1-98704ed527f3)
+The image shows my project Board dvided into three columns: "Todo", "In Progress" and "Done" 
+
 
 ### C. Branching
 
-- Screenshot showing your branch list with meaningful naming.
+![image](https://github.com/user-attachments/assets/b1754d07-e134-4129-8441-f666dd235838)
+The image shows my branches which have been named using the required naming convention.
+
 
 ### D. Pull Requests
 
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
+![image](https://github.com/user-attachments/assets/e1ba527f-fa25-483c-9707-57ba7c8d4c84)
+
 
 ### E. Merge Conflict Resolution
 
