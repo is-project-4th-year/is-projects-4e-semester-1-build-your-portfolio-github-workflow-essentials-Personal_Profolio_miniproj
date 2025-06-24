@@ -1,3 +1,4 @@
+
 # 🌐 Personal Portfolio Project Assignment
 
 Welcome to your **Personal Portfolio Project**! This assignment is designed to help you practice core GitHub and project management skills, including milestones, issues, project boards, branching, commit conventions, pull requests, and resolving merge conflicts.
@@ -94,6 +95,5 @@ Before submitting your project, ensure the following:
 - [ ] Demonstrated conflict resolution (Simulate atleast one)
 - [ ] Deployed the portfolio online
 - [ ] Completed and updated the `Assignment.md` file which will be marked and graded
-
 
 
