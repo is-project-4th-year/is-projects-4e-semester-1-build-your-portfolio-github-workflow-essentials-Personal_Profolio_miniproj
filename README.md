@@ -1,120 +1,97 @@
-# ✅ Individual GitHub Portfolio Project: Student Checklist
-________________________________________
 
-## Project Overview
+# 🌐 Personal Portfolio Project Assignment
 
-You are required to create a personal portfolio website and manage your development process using Git and GitHub. This hands-on assignment introduces you to real-world workflows: issue tracking, feature branching, commits, pull requests, milestone setting, and deployment via GitHub Pages.
+Welcome to your **Personal Portfolio Project**! This assignment is designed to help you practice core GitHub and project management skills, including milestones, issues, project boards, branching, commit conventions, pull requests, and resolving merge conflicts.
 
-**Project Duration:** June 9th – 24th , 2025  
-**Milestone:** v1.0 Portfolio Launch  
-**Deliverables:** GitHub repository link + deployed site link
+---
 
-________________________________________
+## 📌 Project Management Guidelines
 
-### 🧭 Setup and Planning 
+### ✅ Milestones
+Define major phases or deliverables of your portfolio (e.g., Landing Page, Team Profiles, Admin Panel).
 
-- Create a public GitHub repository for your portfolio (suggested name: portfolio-username)
-- Add a basic README.md with:  
-  - Your full name  
-  - Project title  
-  - GitHub Pages link (once ready)  
-- Add a .gitignore file (if needed)  
-- Enable GitHub Pages in repo settings  
-- Set up milestone v1.0 Portfolio Launch (due June 24)  
-- Create 3–5 GitHub Issues for key site sections:  
-  - Home Page  
-  - About Me / Bio  
-  - Projects / Contact Page  
-  - Styling / Responsiveness (optional)  
-  - Deployment  
-- Assign issues to milestone and yourself
+### ✅ Issues
+Break each milestone into manageable tasks. Link these issues to their related milestone for better tracking.
 
-________________________________________
+### ✅ Project Board
+Create a GitHub project board with columns like:
+- `To Do`
+- `In Progress`
+- `Done`
 
-### 🛠️ Development Workflow 
+Assign tasks and pull requests to the appropriate columns.
 
-#### 📋 Branching and Commits
+---
 
-- For each issue, create a feature branch  
-  Example: `git checkout -b feature/home-page`  
-- Commit regularly with clear messages referencing issues  
-  Example: `feat: add intro section to Home (#1)`  
-- Use commit keywords to link and close issues  
-  Example: `Closes #2`
+## 🔧 Git Workflow
 
-#### 🔁 Pull Requests (PRs)
+### 🔀 Branching
+Use feature branches for each issue. Adopt a consistent naming format such as:
 
-- For every feature, open a Pull Request to `main`  
-- Use descriptive titles (e.g., Add Projects Section)  
-- In PR body, mention which issue it closes  
-- Merge PRs after reviewing and testing locally
+```
+feature/<issue-number>-short-description
+```
 
-________________________________________
+### 💬 Commits
+Use structured, meaningful commit messages:
 
-### 🌐 Deployment 
+```
+<type>(<optional scope>): <short description>
 
-- Make sure all features are merged into `main`  
-- Deploy the site via GitHub Pages  
-  - Settings → Pages → Select main branch  
-- Copy the live link into your README.md
+<body>
 
-________________________________________
+<footer>
+```
 
-### ✅ Final Review & Submission (June 23–24)
+**Commit Types: `(use at least 6 of these)`**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation changes
+- `style`: Formatting, white space, etc.
+- `refactor`: Code restructure (no feature or bug)
+- `perf`: Performance improvement
+- `test`: Test-related updates
+- `chore`: Non-code updates (e.g., config)
+- `build`: Build system or dependency changes
+- `ci`: Continuous integration changes
 
-| Task                       | Status |
-|----------------------------|--------|
-| Created GitHub repo        | [ ]    |
-| Set milestone + issues     | [ ]    |
-| README.md written          | [ ]    |
-| Created 3+ feature branches| [ ]    |
-| Linked commits to issues   | [ ]    |
-| Opened & merged PRs        | [ ]    |
-| Site deployed via GitHub Pages | [ ] |
-| Deployment link added to README.md | [ ] |
-| Milestone progress at 100% | [ ]    |
+**Example:**
+```
+feat(portfolio): add responsive navigation bar
 
-________________________________________
+Added a mobile-first responsive nav using Flexbox.
 
-### ✨ Optional Extras (Bonus Points)
- 
- - Add screenshots of your site in README.md  
-- Write a REFLECTION.md (what you learned)  
-- Customize CSS styles creatively  
-- Use at least one image/icon in your portfolio  
-- Use a favicon for your site
+Closes #45
+```
 
-________________________________________
+---
 
-### 📅 Weekly Breakdown (for guidance)
+## 🔄 Pull Requests & Merge Conflicts
 
-| Week          | Focus Area                                |
-|---------------|------------------------------------------|
-| June 10–12    | Setup repo, create issues, branching plan|
-| June 13–15    | Build Home, About sections + commit workflow|
-| June 16–18    | Build Projects section, styling, images  |
-| June 19–20    | Final polish, contact section, icons     |
-| June 21–22    | Deployment to GitHub Pages                |
-| June 23–24    | Final review, clean-up, submission        |
+- Open a PR for each feature branch.
+- Link the PR to its corresponding issue.
+- Request reviews before merging.
+- Document any merge conflict resolution in the PR or commit message.
 
-________________________________________
+---
 
-### 📬 Submission
+## 🚀 Deployment & Documentation
 
-- **Due Date:** June 24, 2025  
-- **Submit via:** [Insert Google Form / LMS / Email]
+- Keep the `main` branch always deployable.
+- Deploy using GitHub Pages (mandatory) and any suitable platform (optional).
+- Complete the `Assignment.md` file in this repository by addressing all listed requirements. This document will be used for evaluation.
+---
 
-________________________________________
+## 📥 Submission Checklist
 
-### 📋 How to Update This README
+Before submitting your project, ensure the following:
 
-As you work on your portfolio, please update this README.md file with the following details:
-
-- **Your deployed portfolio link:**  
-  Add the URL to your live site on GitHub Pages here.
-
-- **Screenshots:**  
-  Add screenshots or images of your portfolio to showcase your work.  
-  Example markdown for adding an image:  
-  ```markdown
-  ![Homepage screenshot](images/homepage.png)
+- [ ] Defined milestones for key features
+- [ ] Created and linked issues to milestones
+- [ ] Organized a GitHub project board (To Do / In Progress / Done)
+- [ ] Used structured commit messages
+- [ ] Created separate feature branches for tasks
+- [ ] Opened and merged PRs with meaningful descriptions
+- [ ] Demonstrated conflict resolution (Simulate atleast one)
+- [ ] Deployed the portfolio online
+- [ ] Completed and updated the `Assignment.md` file which will be marked and graded
