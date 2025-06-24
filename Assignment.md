@@ -2,7 +2,7 @@
 
 ## 1. Student Details
 
-- **Full Name**: Essajee Zahabiya Shamoon
+- **Full Name**: Essajee Zahabiya Shamoon (148252)
 - **GitHub Username**: ZahaEssa
 - **Email**: zahabiya.essajee@strathmore.edu
 
