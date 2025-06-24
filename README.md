@@ -1,5 +1,3 @@
-
-
 # 🌐 Personal Portfolio Project Assignment
 
 Welcome to your **Personal Portfolio Project**! This assignment is designed to help you practice core GitHub and project management skills, including milestones, issues, project boards, branching, commit conventions, pull requests, and resolving merge conflicts.
@@ -97,21 +95,5 @@ Before submitting your project, ensure the following:
 - [ ] Deployed the portfolio online
 - [ ] Completed and updated the `Assignment.md` file which will be marked and graded
 
-# Ephraim's Developer Portfolio
 
-Welcome to my personal web portfolio. This site is built using HTML, CSS, and hosted via GitHub Pages.
-
-## 💼 Pages
-- Home
-- About Me
-- Projects
-- Contact
-
-## 🚀 Deployment
-[View my site live](https://github.com/is-project-4th-year/build-your-portfolio-github-workflow-essentials-ephraimjuma)
-
-## 📸 Screenshots
-![Home Page](home.png)
-![About Me](about.png)
-![Projects](projects.png)
 
