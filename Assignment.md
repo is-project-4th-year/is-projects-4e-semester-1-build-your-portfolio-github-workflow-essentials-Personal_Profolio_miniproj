@@ -2,9 +2,9 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Kimanga Victor Moruri
+- **GitHub Username**:10krhinooo
+- **Email**: vkimanga@gmail.com
 
 ## 2. Deployed Portfolio Link
 
