@@ -23,3 +23,28 @@ body {
 
 /* footer */
 footer { text-align:center; font-size:.875rem; color:#777; margin-top:2rem; }
+
+/* ===== Nav bar (#3) ===== */
+.nav{
+  display:flex;align-items:center;justify-content:space-between;padding:1rem 0;
+}
+.logo{font-weight:700;font-size:1.25rem;text-decoration:none;color:#0a66c2;}
+.logo span{color:#ffa600;}
+#nav-toggle{
+  background:none;border:none;font-size:1.5rem;cursor:pointer;display:none;
+}
+#nav-menu{display:flex;gap:1.5rem;}
+#nav-menu a{text-decoration:none;color:#333;font-weight:500;}
+#nav-menu a:hover{color:#0a66c2;}
+
+/* mobile tweaks */
+@media(max-width:640px){
+  #nav-toggle{display:block;}
+  #nav-menu{
+    position:absolute;top:64px;right:0;background:#fff;
+    flex-direction:column;width:200px;padding:1rem;gap:1rem;
+    box-shadow:0 4px 16px rgba(0,0,0,.05);
+    transform:scaleY(0);transform-origin:top;transition:transform .2s;
+  }
+  #nav-menu.open{transform:scaleY(1);}
+}
