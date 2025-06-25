@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <button id="toggle-theme" aria-label="Toggle theme">🌓</button>
+  </header>
+
+  <main class="hero">
+    <h1>Hi, I'm Simmer.<br>I try making <span class="highlight">{cool things}</span> with code.</h1>
+    <a href="#projects" class="cta-button">See My Work</a>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Simmer Mwaniki</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-theme');
+    toggleBtn.addEventListener('click', () => {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
