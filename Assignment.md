@@ -37,7 +37,8 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 
 ### B. Project Board
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
+![1750849918051](image/Assignment/1750849918051.png)
+ - Includes a picture of my project board with all the issues arranged in their respectful columns 
 
 ### C. Branching
 
@@ -45,7 +46,7 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 
 ### D. Pull Requests
 
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
+-![1750850217106](image/Assignment/1750850217106.png)
 
 ### E. Merge Conflict Resolution
 
