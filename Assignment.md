@@ -3,6 +3,7 @@
 ## 1. Student Details
 
 - **Full Name**:
+- **Admission Number**:
 - **GitHub Username**:
 - **Email**:
 
