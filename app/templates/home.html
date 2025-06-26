@@ -8,8 +8,44 @@
     Eugene Ikonya Portfolio
 {% endblock keywords %}
 {% block content %}
-
-<canvas id="three-canvas" style="display:block;width:100vw;height:100vh;"></canvas>
+<div class="flex flex-col md:flex-row min-h-screen">
+    <!-- Left half with 3D text -->
+    <div class="w-full md:w-1/2 min-h-screen relative">
+        <canvas id="three-canvas" class="absolute inset-0 w-full h-full"></canvas>
+        <!-- Color tabs -->
+        <div class="absolute top-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
+            <button class="w-10 h-10 rounded-full bg-black border-2 border-gray-300 hover:scale-110 transition-transform" data-color="0x111111"></button>
+            <button class="w-10 h-10 rounded-full bg-blue-500 border-2 border-gray-300 hover:scale-110 transition-transform" data-color="0x0066ff"></button>
+            <button class="w-10 h-10 rounded-full bg-red-500 border-2 border-gray-300 hover:scale-110 transition-transform" data-color="0xff0000"></button>
+            <button class="w-10 h-10 rounded-full bg-green-500 border-2 border-gray-300 hover:scale-110 transition-transform" data-color="0x00ff00"></button>
+            <button class="w-10 h-10 rounded-full bg-purple-500 border-2 border-gray-300 hover:scale-110 transition-transform" data-color="0x800080"></button>
+        </div>
+        <div class="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-center">
+            <p class="text-gray-600 text-sm font-medium animate-bounce">
+                Scroll & Click to Interact
+                <br>
+                ↓
+            </p>
+        </div>
+        <!-- Mobile scroll button -->
+        <button id="mobile-scroll-btn" class="md:hidden fixed bottom-4 right-4 bg-black text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-gray-800 transition-colors z-50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Right half with content -->
+    <div class="w-full md:w-1/2 flex items-center justify-center p-8 bg-black text-white">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Want to know more?</h2>
+            <p class="mb-8 text-lg text-gray-300">Find out more about Eugene Ikonya</p>
+            <a href="{% url 'about' %}" class="inline-block bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-200 transition-colors text-lg font-medium">
+                Click Here
+            </a>
+        </div>
+    </div>
+</div>
 {% endblock content %}
 {% block scripts %}
 <script src="{% static 'js/pages/home.js' %}" type="module"></script>
@@ -22,5 +58,15 @@
         "three/jsm/geometries/TextGeometry.js": "{% static 'js/Three/jsm/geometries/TextGeometry.js' %}"
       }
     }
+</script>
+<script>
+    // Mobile scroll button functionality
+    document.getElementById('mobile-scroll-btn').addEventListener('click', function() {
+        const windowHeight = window.innerHeight;
+        window.scrollTo({
+            top: windowHeight,
+            behavior: 'smooth'
+        });
+    });
 </script>
 {% endblock%}
