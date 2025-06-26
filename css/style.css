@@ -15,3 +15,45 @@ nav ul {
   gap: 1rem;
   list-style: none;
 }
+/* About Me Section */
+#about {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-container img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-text ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+  margin-top: 0.5rem;
+}
