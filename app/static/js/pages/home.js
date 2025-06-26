@@ -39,6 +39,7 @@ let keyState = {
     d: false
 };
 
+
 // Load font and create 3D text
 const loader = new FontLoader();
 loader.load('https://unpkg.com/three@0.150.1/examples/fonts/helvetiker_regular.typeface.json', function (font) {
