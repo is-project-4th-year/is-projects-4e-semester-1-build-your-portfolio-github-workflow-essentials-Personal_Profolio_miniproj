@@ -1,4 +1,0 @@
-Django
-django-browser-reload
-Pillow
-django-widget-tweaks

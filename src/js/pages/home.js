@@ -3,12 +3,14 @@ import { OrbitControls } from 'orbitControls';
 import { FontLoader } from 'three/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'three/jsm/geometries/TextGeometry.js';
 
+alert('hello');
+
 const canvas = document.getElementById('three-canvas');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
 renderer.setPixelRatio(window.devicePixelRatio);
 resizeRenderer();
 
-const scene = new THREE.Scene();
+const scene = new THREE.Scene();    
 scene.background = new THREE.Color(0xffffff); // white background
 
 // Responsive camera setup
@@ -42,7 +44,7 @@ let keyState = {
 
 // Load font and create 3D text
 const loader = new FontLoader();
-loader.load('https://unpkg.com/three@0.150.1/examples/fonts/helvetiker_regular.typeface.json', function (font) {
+loader.load('fonts/helvetiker_regular.typeface.json', function (font) {
     const text = 'EugeneIkonya';
     const size = getTextSize();
     
