@@ -9,10 +9,11 @@
     <title>Osiligi | {% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/tailwind.css' %}">
 </head>
-<body>
-    <main>
+<body class="flex flex-col min-h-screen">
+    <main class="flex-grow">
         {% block content %}{% endblock content %}
     </main>
+    {% include 'components/footer.html' %}
 {% block scripts %}
 {% endblock scripts %}
 </body>
