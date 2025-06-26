@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block description %}{% endblock description %}">
+    <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
+    <title>Osiligi | {% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/tailwind.css' %}">
+</head>
+<body class="bg-white min-h-screen flex flex-col">
+    {% include 'components/navbar.html' %}
+    <main class="pt-16">
+        {% block content %}{% endblock content %}
+    </main>
+    {% include 'components/footer.html' %}
+{% block scripts %}
+{% endblock scripts %}
+</body>
+</html>
