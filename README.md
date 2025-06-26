@@ -1,15 +1,25 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/m3FKhDRs)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19841927&assignment_repo_type=AssignmentRepo)
-# 🌐 Personal Portfolio Project Assignment
+# 🌐 AfyaLink: A Deep Learning-Powered Tuberculosis Detection System Using Chest X-ray Images
 
-Welcome to your **Personal Portfolio Project**! This assignment is designed to help you practice core GitHub and project management skills, including milestones, issues, project boards, branching, commit conventions, pull requests, and resolving merge conflicts.
+Welcome to **AfyaLink: A Deep Learning-Powered Tuberculosis Detection System Using Chest X-ray Images**! AfyaLink is an AI-powered web application designed to assist in the early detection of Tuberculosis (TB) through analysis of chest X-ray images using deep learning models. The system enables medical practitioners to upload X-rays and receive real-time TB prediction results, improving access to diagnostics in resource-constrained settings.
 
 ---
 
 ## 📌 Project Management Guidelines
 
 ### ✅ Milestones
-Define major phases or deliverables of your portfolio (e.g., Landing Page, Team Profiles, Admin Panel).
+Milestone 1: Doctor Dashboard UI
+
+Milestone 2: Chest X-ray Upload + Preprocessing Module
+
+Milestone 3: CNN Model Integration
+
+Milestone 4: Output + Confidence Score UI
+
+Milestone 5: PostgreSQL Database + Admin Panel
+
+Milestone 6: Feedback & Report Module
 
 ### ✅ Issues
 Break each milestone into manageable tasks. Link these issues to their related milestone for better tracking.
