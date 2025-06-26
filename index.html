@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>My Logo</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Hello, I’m <span class="highlight">Martin Lenga</span></h1>
+      <p class="intro">
+        I craft intuitive web experiences that are fast, functional and user-focused.
+      </p>
+      <p class="tagline">
+        Frontend Dev • Django Enthusiast • Problem Solver
+      </p>
+      <a href="#projects" class="cta-button">Explore My Work</a>
+    </div>
+
+    <div class="hero-visual">
+      <div class="image-grid">
+      <img src="images/hero-image.jpg" alt="Creative workspace">
+      <img src="images/fun.jpg" alt="Design planning">
+      <img src="images/nature.jpg" alt="Responsive layout">
+      <img src="images/hero-1.jpg" alt="Responsive layout">
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/profile.jpeg" alt="Martin Lenga" />
+      <div class="about-text">
+        <p>
+          Hello there! 👋 I'm <strong>Martin Lenga</strong> — a creative developer passionate about turning ideas into impactful digital experiences.
+          I'm currently in my forth year studying Computer Science, spending my time immersed in code, data and curiosity.
+        </p>
+
+        <p>
+          I specialize in <strong>frontend development</strong> but enjoy crafting full-stack applications that blend clean design with powerful logic.
+          Whether it's a booking platform, portfolio or dashboard — I'm all in 💻.
+        </p>
+
+        <h3>🔧 Technologies I Work With</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python & Django</li>
+          <li>Git & GitHub</li>
+          <li>Tailwind & Bootstrap</li>
+          <li>PostgreSQL & SQL</li>
+        </ul>
+
+        <h3>🌱 Fun Facts</h3>
+        <ul>
+          <li>⚽ Big football fan (FIFA = therapy)</li>
+          <li>🎧 Code best with Afrobeats or Jazz on loop</li>
+          <li>📸 Exploring nature on weekends</li>
+          <li>🌍 Passionate about African tech solutions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+  <div class="projects-container">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">Here’s a glimpse into some of the projects I’ve built recently.</p>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="images/drug-dispensing.jpg" alt="Drug Dispensing Tool">
+        <div class="project-content">
+          <h3>Drug Dispensing Tool</h3>
+          <p>A lightweight system designed to streamline and track medicine distribution in hospitals and local clinics.</p>
+          <p class="tech-stack">Tech: Python, PostgreSQL, PHP</p>
+          <a href="https://github.com/Mutinda-Mark/Drug-Dispenser" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/password-manager.jpg" alt="Password Manager">
+        <div class="project-content">
+          <h3>Password Manager</h3>
+          <p>Securely stores and retrieves your passwords with local encryption — built for privacy and simplicity.</p>
+          <p class="tech-stack">Tech: Python, PyQt, Fernet (Cryptography)</p>
+          <a href="https://github.com/Martinlenga/password-manager" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/bus booking.jpg" alt="Online Bus Booking System">
+        <div class="project-content">
+          <h3>Online Bus Booking System</h3>
+          <p>A full-stack Django app that handles real-time bus scheduling, seat selection, and user bookings.</p>
+          <p class="tech-stack">Tech: Django, PostgreSQL, Bootstrap</p>
+          <a href="https://github.com/Martinlenga/online_bus_booking_system" class="project-link" target="_blank">Explore Live Demo →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">Have a project or just want to say hello? Feel free to reach out!</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:martinlenga003@gmail.com">martinlenga003@gmail.com</a></p>
+        <p><strong>Github:</strong> <a href="https://github.com/Martinlenga">Martinlenga</a></p>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer>
+    <p>© 2025 Martin Lenga. All rights reserved.</p>
+  </footer>
+</body>
+</html>
