@@ -31,11 +31,18 @@ dirLight.position.set(0, 1, 2);
 scene.add(dirLight);
 
 let letterMeshes = [];
+let textGroup = new THREE.Group();
+let keyState = {
+    w: false,
+    a: false,
+    s: false,
+    d: false
+};
 
 // Load font and create 3D text
 const loader = new FontLoader();
 loader.load('https://unpkg.com/three@0.150.1/examples/fonts/helvetiker_regular.typeface.json', function (font) {
-    const text = 'eugeneikonya';
+    const text = 'EugeneIkonya';
     const size = getTextSize();
     
     // Create individual letters
@@ -73,16 +80,18 @@ loader.load('https://unpkg.com/three@0.150.1/examples/fonts/helvetiker_regular.t
             originalRotation: letterMesh.rotation.y
         };
         
-        scene.add(letterMesh);
+        textGroup.add(letterMesh);
         letterMeshes.push(letterMesh);
     }
     
-    // Center all letters
+    // Center the group's pivot point
     const totalWidth = xOffset;
     letterMeshes.forEach(mesh => {
         mesh.position.x -= totalWidth / 2;
     });
     
+    // Add the centered group to the scene
+    scene.add(textGroup);
     animate();
 });
 
@@ -101,7 +110,6 @@ const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 
 canvas.addEventListener('click', (event) => {
-    // Calculate mouse position in normalized device coordinates
     const rect = canvas.getBoundingClientRect();
     mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
     mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
@@ -145,13 +153,21 @@ function animate() {
     requestAnimationFrame(animate);
 
     // Add subtle twitching animation
-    const time = Date.now() * 0.001; // Convert to seconds
+    const time = Date.now() * 0.001;
     letterMeshes.forEach((letter, i) => {
-        // Subtle rotation based on time and letter position
         const rotationSpeed = 1.5;
-        const rotationAmount = 0.03; // About 1.7 degrees
+        const rotationAmount = 0.03;
         letter.rotation.z = Math.sin(time * rotationSpeed + i * 0.3) * rotationAmount;
     });
+
+    // Handle WASD controls
+    const moveSpeed = 0.25;
+    const rotateSpeed = 0.03;
+
+    if (keyState.w) textGroup.position.y += moveSpeed;
+    if (keyState.s) textGroup.position.y -= moveSpeed;
+    if (keyState.a) textGroup.rotation.y += rotateSpeed;
+    if (keyState.d) textGroup.rotation.y -= rotateSpeed;
 
     controls.update();
     renderer.render(scene, camera);
@@ -194,3 +210,22 @@ function getTextSize() {
     // Adjust text size accordingly
     return Math.max(4, min / (window.innerWidth >= 768 ? 16 : 16));
 }
+
+// Add keyboard controls
+window.addEventListener('keydown', (e) => {
+    switch(e.key.toLowerCase()) {
+        case 'w': keyState.w = true; break;
+        case 's': keyState.s = true; break;
+        case 'a': keyState.a = true; break;
+        case 'd': keyState.d = true; break;
+    }
+});
+
+window.addEventListener('keyup', (e) => {
+    switch(e.key.toLowerCase()) {
+        case 'w': keyState.w = false; break;
+        case 's': keyState.s = false; break;
+        case 'a': keyState.a = false; break;
+        case 'd': keyState.d = false; break;
+    }
+});
