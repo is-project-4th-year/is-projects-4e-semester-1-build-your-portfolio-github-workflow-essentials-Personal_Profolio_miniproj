@@ -535,6 +535,9 @@ video {
 .mb-4{
   margin-bottom: 1rem;
 }
+.mb-3{
+  margin-bottom: 0.75rem;
+}
 .block{
   display: block;
 }
@@ -651,6 +654,15 @@ video {
 .resize{
   resize: both;
 }
+.list-inside{
+  list-style-position: inside;
+}
+.list-disc{
+  list-style-type: disc;
+}
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .flex-col{
   flex-direction: column;
 }
@@ -662,6 +674,9 @@ video {
 }
 .justify-between{
   justify-content: space-between;
+}
+.gap-6{
+  gap: 1.5rem;
 }
 .space-x-8 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
@@ -677,6 +692,11 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 .truncate{
   overflow: hidden;
@@ -730,11 +750,22 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
 }
+.bg-blue-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+}
 .p-1{
   padding: 0.25rem;
 }
 .p-8{
   padding: 2rem;
+}
+.p-6{
+  padding: 1.5rem;
 }
 .px-4{
   padding-left: 1rem;
@@ -797,11 +828,18 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .font-bold{
   font-weight: 700;
 }
 .font-medium{
   font-weight: 500;
+}
+.font-semibold{
+  font-weight: 600;
 }
 .uppercase{
   text-transform: uppercase;
@@ -839,6 +877,10 @@ video {
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+.text-gray-800{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -923,6 +965,9 @@ video {
   }
   .md\:w-1\/2{
     width: 50%;
+  }
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .md\:flex-row{
     flex-direction: row;
