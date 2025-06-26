@@ -1,3 +1,4 @@
+
 :root {
   --primary-color: #0070f3;
   --text-color: #333;
@@ -176,3 +177,4 @@ body {
 .social-links a:hover {
   text-decoration: underline;
 }
+
