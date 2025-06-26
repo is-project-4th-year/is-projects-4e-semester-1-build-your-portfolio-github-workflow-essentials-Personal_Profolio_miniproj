@@ -4,40 +4,74 @@ body {
   padding: 0;
 }
 
+/* ===== Header/Navbar ===== */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #003049;
   color: white;
-  padding: 0.6rem 2rem;
+  padding: 1.2rem 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem; /* adds spacing on both sides */
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-nav h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
-nav ul {
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.logo span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
 
-nav ul li a {
+.nav-links li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-  border-bottom: 2px solid white;
+.nav-links li a:hover {
+  border-bottom: 2px solid #0ea5e9;
 }
+
+/* Offset top padding for fixed header */
+body {
+  padding-top: 80px;
+}
+
 
 /* ===== Hero Section (Modern Creative) ===== */
 #hero {
