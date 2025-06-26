@@ -9,8 +9,9 @@
     <title>Osiligi | {% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/tailwind.css' %}">
 </head>
-<body>
-    <main>
+<body class="bg-white">
+    {% include 'components/navbar.html' %}
+    <main class="pt-16">
         {% block content %}{% endblock content %}
     </main>
 {% block scripts %}
