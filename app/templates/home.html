@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block description %}
+    Osiligi Farm is amazing
+{% endblock description %}
+{% block keywords %}
+    Osiligi, Farm, Agrotourism
+{% endblock keywords %}
+{% block content %}
+
+<canvas id="three-canvas" style="display:block;width:100vw;height:100vh;"></canvas>
+{% endblock content %}
+{% block scripts %}
+<script src="{% static 'js/pages/home.js' %}" type="module"></script>
+<script type="importmap">
+    {
+      "imports": {
+        "three": "{% static 'js/Three/build/three.module.js' %}",
+        "orbitControls": "{% static 'js/Three/jsm/controls/OrbitControls.js' %}",
+        "three/jsm/loaders/FontLoader.js": "{% static 'js/Three/jsm/loaders/FontLoader.js' %}",
+        "three/jsm/geometries/TextGeometry.js": "{% static 'js/Three/jsm/geometries/TextGeometry.js' %}"
+      }
+    }
+</script>
+{% endblock%}
