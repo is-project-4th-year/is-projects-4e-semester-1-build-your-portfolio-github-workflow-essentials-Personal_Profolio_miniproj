@@ -2,49 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islam Faruk Jeizan - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .project-card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+  </style>
 </head>
-<section id="projects">
-  <h2>My Projects</h2>
-  <div class="project-card" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem;">
-    <h3>Project One</h3>
-    <p>This project demonstrates basic HTML and CSS structure.</p>
-  </div>
-  <div class="project-card" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem;">
-    <h3>Project Two</h3>
-    <p>This project includes JavaScript interactivity and layout styling.</p>
-  </div>
-</section>
-
 <body>
-<h1>Conflict test from feature branch (GUI)</h1>
-  <p>This is the landing page.</p>
+
+  <header>
+    <h1>Islam Faruk Jeizan</h1>
+    <p>Welcome to my personal portfolio!</p>
+  </header>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <h3>Project One</h3>
+      <p>This project demonstrates basic HTML and CSS structure.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project Two</h3>
+      <p>This project includes JavaScript interactivity and layout styling.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
 </body>
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form>
-    <label for="name">Name:</label><br />
-    <input type="text" id="name" name="name"><br /><br />
-
-    <label for="email">Email:</label><br />
-    <input type="email" id="email" name="email"><br /><br />
-
-    <label for="message">Message:</label><br />
-    <textarea id="message" name="message"></textarea><br /><br />
-
-    <button type="submit">Send</button>
-  </form>
-</section>
-<section id="projects">
-  <h2>My Projects</h2>
-  <div class="project-card" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem;">
-    <h3>Project One</h3>
-    <p>A short description of project one. It showcases my work with HTML and CSS.</p>
-  </div>
-  <div class="project-card" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem;">
-    <h3>Project Two</h3>
-    <p>A short description of project two. It highlights JavaScript interactivity.</p>
-  </div>
-</section>
-
 </html>
