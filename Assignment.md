@@ -58,40 +58,39 @@
 
 ## 4. Screenshots of Key GitHub Features
 
-```
 
 ### A. Milestones and Issues
 
-```markdown
+
 ![Milestones and Issues](images/milestone.png)
 ![Milestones and Issues](images/issues.png)
 
-```
 
-- Screenshot showing your milestone(s) and the issues linked to it.
+
+
 
 ### B. Project Board
-```markdown
+
 ![project board](images/project.png)
-```
+
 
 
 ### C. Branching
-```markdown
+
 ![Branching](images/branches.png)
-```
+
 
 ### D. Pull Requests
-```markdown
+
 ![Pull Requests](images/pull.png)
 
-```
+
 
 
 
 ### E. Merge Conflict Resolution
-```markdown
-![Merge Conflict Resolution](merge.png)
-```
+
+![Merge Conflict Resolution](images/merge.png)
+
 
 
