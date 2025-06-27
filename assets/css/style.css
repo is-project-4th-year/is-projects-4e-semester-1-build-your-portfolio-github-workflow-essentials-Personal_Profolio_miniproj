@@ -8,8 +8,6 @@ body {
 }
 
 /* Placeholder for other styles (to be added in branches) */
-<<<<<<< HEAD
-=======
 /* Base styles */
 body {
   margin: 0;
@@ -20,7 +18,6 @@ body {
 }
 
 /* Placeholder for other styles (to be added in branches) */
->>>>>>> main
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -59,8 +56,6 @@ body {
   background-color: #f4f4f4;
   text-align: center;
 }
-<<<<<<< HEAD
-=======
 #projects {
   padding: 2rem;
   text-align: center;
@@ -103,4 +98,3 @@ button {
   border: none;
   cursor: pointer;
 }
->>>>>>> main
