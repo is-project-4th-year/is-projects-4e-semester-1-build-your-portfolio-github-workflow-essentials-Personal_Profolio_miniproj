@@ -1,39 +1,52 @@
 # Personal Portfolio Documentation
 
+---
+
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name:** Martin Lenga Mwapahe
+- **Admission Number:** 150160  
+- **GitHub Username:** Martinlenga  
+- **Email:** martin.mwapahe@strathmore.edu
+
+---
 
 ## 2. Deployed Portfolio Link
 
-- **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+- **GitHub Pages URL:**  
+  [Live Portfolio Link](https://github.com/is-project-4th-year/build-your-portfolio-github-workflow-essentials-Martinlenga)
+
+---
 
 ## 3. Learnings from the Git Crash Program
 
-**What I Thought I'd Learn vs What I Actually Learned**
+### Concept 1: GitHub Project Boards  
+**Expectation:** Thought it was a project management tool used only by large teams.  
+**Reality:** It’s basically a Kanban board — easy to drag issues and visualize tasks.  
+**Impact:** Helped me break my portfolio into smaller tasks and track progress easily.
 
-Write about **4 things** you expected to learn during the Git crash course (yes, we all came in with some big hopes 😅).
-For each one, tell us:
+---
 
-What you thought it would be like `(Expectation 👀)`
+### Concept 2: Commit Conventions  
+**Expectation:** Seemed like something advanced or optional.  
+**Reality:** Turned out to be a clear way to track changes and make commits readable.  
+**Impact:** Helped me stay organized when working with multiple branches and features.
 
-What you actually learned `(Reality 😅)`
+---
 
-And how it helped with your personal portfolio project 💻
+### Concept 3: Pull Requests  
+**Expectation:** I thought PRs were only for big open-source projects.  
+**Reality:** PRs made it easy to review changes even as a solo dev.  
+**Impact:** Allowed me to track features, simulate merge conflicts and work neatly.
 
-**Example format:**
+---
 
-`Concept: GitHub Project Boards`
+### Concept 4: Merge Conflict Resolution  
+**Expectation:** Thought it would be scary or technical to resolve.  
+**Reality:** It's just a matter of reading changes carefully and choosing what stays.  
+**Impact:** Gave me confidence to handle Git in real-world scenarios.
 
-`Expectation 👀`: Looked like a complicated tool only teams use.
-
-`Reality 😅`: It’s actually a visual to-do list! Dragging my tasks from “To do” to “Done” felt so satisfying.
-
-`Impact 💡`: Helped me stay organized and track my progress on the portfolio, especially when I had lots of sections to build.
+---
 
 
 ## 4. Screenshots of Key GitHub Features
