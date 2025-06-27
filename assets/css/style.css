@@ -1,0 +1,90 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Placeholder for other styles (to be added in branches) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+#hero {
+  background-color: #0077cc;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+#about {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+#projects {
+  padding: 2rem;
+  text-align: center;
+}
+#contact {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.75rem;
+  width: 100%;
+}
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+h2 {
+  margin-bottom: 10px;
+}
+button {
+  background: #333;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
