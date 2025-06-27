@@ -66,15 +66,15 @@ ________________________________________
 
 | Task                       | Status |
 |----------------------------|--------|
-| Created GitHub repo        | [ ]    |
-| Set milestone + issues     | [ ]    |
-| README.md written          | [ ]    |
-| Created 3+ feature branches| [ ]    |
-| Linked commits to issues   | [ ]    |
-| Opened & merged PRs        | [ ]    |
-| Site deployed via GitHub Pages | [ ] |
-| Deployment link added to README.md | [ ] |
-| Milestone progress at 100% | [ ]    |
+| Created GitHub repo        | [ Done]    |
+| Set milestone + issues     | [ Done]    |
+| README.md written          | [ Done]    |
+| Created 3+ feature branches| [ Done]    |
+| Linked commits to issues   | [ Done ]    |
+| Opened & merged PRs        | [ Done]    |
+| Site deployed via GitHub Pages | [ Done] |
+| Deployment link added to README.md | [ Done] |
+| Milestone progress at 100% | [ Done ]    |
 
 ________________________________________
 
@@ -114,9 +114,34 @@ As you work on your portfolio, please update this README.md file with the follow
 
 - **Your deployed portfolio link:**  
   Add the URL to your live site on GitHub Pages here.
+  🌐 **Live Site**: [winstone-were.github.io/portofolio-winstone-were](https://winstone-were.github.io/portofolio-winstone-were)
 
 - **Screenshots:**  
   Add screenshots or images of your portfolio to showcase your work.  
   Example markdown for adding an image:  
-  ```markdown
-  ![Homepage screenshot](images/homepage.png)
+
+  ![Profile Section Pull Request](images/about-section-pr.png)
+
+  ### Homepage
+  ![Home Page](images/homepage.png)
+
+  ### About Me
+  ![About Me](images/aboutme.png)
+
+  ### Experience
+  ![Experience](images/experience.png)
+
+  ### Education
+  ![Education](images/education.png)
+
+  ### Projects
+  ![Projects Page](images/projects.png)
+
+  ### Certifications
+  ![Certifications Page](images/certifications.png)
+
+  ### Skills 
+  ![Skills Page](images/skills.png)
+
+  ### Contact
+  ![Contact Page](images/contact.png)
