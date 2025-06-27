@@ -1,0 +1,230 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(270deg, #1a1a1a, #0a0a0a, #000);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    color: #fff;
+    background-attachment: fixed;
+  }
+  
+  .square-img {
+    border-radius: 0;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .square-img:hover {
+    transform: scale(1.03);
+  }
+  
+  .navbar-glass {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-link.active {
+    color: #60a5fa;
+    /* Tailwind blue-400 */
+    font-weight: bold;
+    border-bottom: 2px solid #60a5fa;
+  }
+  
+  .full-height-section {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+    position: relative;
+    /* Needed for absolute background elements */
+    overflow: hidden;
+    /* Hide overflow from parallax elements */
+  }
+  
+  @media (max-width: 768px) {
+    .full-height-section {
+      min-height: auto;
+      padding: 2rem 0;
+    }
+  }
+  
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Adjust order for alternating layout */
+  .md\:order-first {
+    order: -1;
+  }
+  
+  .md\:order-last {
+    order: 1;
+  }
+  
+  /* Hero section specific styles */
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section-background-elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+    /* Ensure elements are in background */
+  }
+  
+  .section-background-elements .shape {
+    position: absolute;
+    background-color: rgba(96, 165, 250, 0.05);
+    /* Blue-400 with more opacity */
+    border-radius: 50%;
+    filter: blur(40px);
+    /* Slightly less blur */
+    opacity: 0.6;
+    /* Slightly less opaque */
+  }
+  
+  /* Specific shape sizes and positions for each section can be defined here or dynamically */
+  .section-background-elements .shape-small {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .section-background-elements .shape-medium {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .section-background-elements .shape-large {
+    width: 350px;
+    height: 350px;
+  }
+  
+  /* Custom positions for shapes within sections */
+  #experience .shape-1 {
+    top: 15%;
+    left: 5%;
+  }
+  
+  #experience .shape-2 {
+    bottom: 10%;
+    right: 10%;
+  }
+  
+  #education .shape-1 {
+    top: 5%;
+    right: 15%;
+  }
+  
+  #education .shape-2 {
+    bottom: 20%;
+    left: 10%;
+  }
+  
+  #projects .shape-1 {
+    top: 20%;
+    left: 20%;
+  }
+  
+  #projects .shape-2 {
+    bottom: 5%;
+    right: 5%;
+  }
+  
+  #certifications .shape-1 {
+    top: 10%;
+    left: 10%;
+  }
+  
+  #certifications .shape-2 {
+    bottom: 15%;
+    right: 20%;
+  }
+  
+  #skills .shape-1 {
+    top: 25%;
+    right: 10%;
+  }
+  
+  #skills .shape-2 {
+    bottom: 10%;
+    left: 15%;
+  }
+  
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  
+  .animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .animated-bg rect {
+    fill: rgba(59, 130, 246, 0.1);
+    stroke: rgba(59, 130, 246, 0.3);
+    stroke-width: 1;
+  }
+  
+  .section-content {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .section-background-elements {
+    position: relative;
+    z-index: 1;
+  }
