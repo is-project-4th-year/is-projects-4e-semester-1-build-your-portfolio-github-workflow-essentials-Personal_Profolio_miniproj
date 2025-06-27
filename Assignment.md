@@ -26,15 +26,14 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 
 ### A. Milestones and Issues
 
-![1750875832073](image/Assignment/1750875832073.png)
+
+- ![1751051193024](image/Assignment/1751051193024.png)
 
 - The opened issues of the first Milestone.  
-
-![1750875888989](image/Assignment/1750875888989.png)
-
+![1751051241698](image/Assignment/1751051241698.png)
 - The closed issues for the first milestone
 
-![1750875775827](image/Assignment/1750875775827.png)
+![1751051315736](image/Assignment/1751051315736.png)
 
 - last milestone Issues
 
@@ -46,8 +45,7 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 
 ### C. Branching
 
-- ![1750874690684](image/Assignment/1750874690684.png)
-
+-![1751051358417](image/Assignment/1751051358417.png)
 ### D. Pull Requests
 
 - ![1750850217106](image/Assignment/1750850217106.png)
