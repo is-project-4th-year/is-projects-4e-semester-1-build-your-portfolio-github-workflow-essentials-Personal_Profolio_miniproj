@@ -1,63 +1,120 @@
+// Performance-Optimized Profile Picture Fade-in Animation
+// Uses Intersection Observer API, requestAnimationFrame, and CSS transforms
 
-// Using basic DOM manipulation and setTimeout
-
-document.addEventListener('DOMContentLoaded', function() {
-    const profileImage = document.querySelector('.profile-circle');
-    
-    // Initially hide the profile image
-    profileImage.style.opacity = '0';
-    profileImage.style.transform = 'scale(0.8)';
-    profileImage.style.transition = 'opacity 1.5s ease-out, transform 1.5s ease-out';
-    
-    // Function to animate the profile picture
-    function animateProfilePicture() {
-        // Check if element is in viewport (basic intersection check)
-        const rect = profileImage.getBoundingClientRect();
-        const isInViewport = (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
+class ProfileAnimator {
+    constructor() {
+        this.profileImage = null;
+        this.observer = null;
+        this.isAnimated = false;
+        this.rafId = null;
         
-        if (isInViewport) {
-            // Animate in with delay
-            setTimeout(() => {
-                profileImage.style.opacity = '1';
-                profileImage.style.transform = 'scale(1)';
-                
-                // Add a subtle bounce effect
-                setTimeout(() => {
-                    profileImage.style.transform = 'scale(1.05)';
-                    setTimeout(() => {
-                        profileImage.style.transform = 'scale(1)';
-                    }, 200);
-                }, 1000);
-                
-            }, 500); // 500ms delay before starting animation
-            
-            // Remove scroll listener once animated
-            window.removeEventListener('scroll', animateProfilePicture);
-            window.removeEventListener('resize', animateProfilePicture);
+        this.init();
+    }
+    
+    init() {
+        // Wait for DOM to be ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.setup());
+        } else {
+            this.setup();
         }
     }
     
-    // Listen for scroll and resize events
-    window.addEventListener('scroll', animateProfilePicture);
-    window.addEventListener('resize', animateProfilePicture);
+    setup() {
+        this.profileImage = document.querySelector('.profile-circle');
+        
+        if (!this.profileImage) {
+            console.warn('Profile image not found');
+            return;
+        }
+        
+        this.profileImage.classList.add('profile-fade-initial');
+        
+        this.createIntersectionObserver();
+        
+        this.addHoverEffects();
+    }
     
-    // Initial check in case element is already in viewport
-    animateProfilePicture();
+    createIntersectionObserver() {
+        const options = {
+            root: null, 
+            rootMargin: '50px',
+            threshold: 0.1 
+        };
+        
+        this.observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !this.isAnimated) {
+                    this.animateIn();
+                }
+            });
+        }, options);
+        
+        this.observer.observe(this.profileImage);
+    }
     
-    // Add hover effects (performance-heavy approach)
-    profileImage.addEventListener('mouseenter', function() {
-        this.style.transition = 'transform 0.3s ease-out, box-shadow 0.3s ease-out';
-        this.style.transform = 'scale(1.1) rotate(5deg)';
-        this.style.boxShadow = '0 25px 50px rgba(102, 126, 234, 0.5)';
-    });
+    animateIn() {
+        if (this.isAnimated) return;
+        
+        this.isAnimated = true;
+        
+        // Use requestAnimationFrame for smooth animations
+        this.rafId = requestAnimationFrame(() => {
+            
+            setTimeout(() => {
+                this.profileImage.classList.add('profile-fade-in');
+                
+                
+                this.profileImage.addEventListener('animationend', this.handleAnimationEnd.bind(this), { once: true });
+                
+            }, 300); 
+
+        });
+        this.observer.disconnect();
+    }
     
-    profileImage.addEventListener('mouseleave', function() {
-        this.style.transform = 'scale(1) rotate(0deg)';
-        this.style.boxShadow = '0 15px 35px rgba(102, 126, 234, 0.3)';
-    });
+    handleAnimationEnd(event) {
+        if (event.animationName === 'profileFadeIn') {
+           
+            this.profileImage.classList.add('profile-bounce-in');
+        }
+    }
+    
+    addHoverEffects() {
+        // Use CSS classes instead of inline styles for better performance
+        this.profileImage.addEventListener('mouseenter', this.handleMouseEnter.bind(this), { passive: true });
+        this.profileImage.addEventListener('mouseleave', this.handleMouseLeave.bind(this), { passive: true });
+    }
+    
+    handleMouseEnter() {
+        this.profileImage.classList.add('profile-hover');
+    }
+    
+    handleMouseLeave() {
+        this.profileImage.classList.remove('profile-hover');
+    }
+    
+    // Clean up method for better memory management
+    destroy() {
+        if (this.observer) {
+            this.observer.disconnect();
+        }
+        if (this.rafId) {
+            cancelAnimationFrame(this.rafId);
+        }
+        if (this.profileImage) {
+            this.profileImage.removeEventListener('mouseenter', this.handleMouseEnter);
+            this.profileImage.removeEventListener('mouseleave', this.handleMouseLeave);
+        }
+    }
+}
+
+// Initialize the animator
+const profileAnimator = new ProfileAnimator();
+
+// Clean up on page unload for better memory management
+window.addEventListener('beforeunload', () => {
+    if (profileAnimator) {
+        profileAnimator.destroy();
+    }
 });
