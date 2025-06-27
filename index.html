@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amaumo Winstone Were – Portfolio</title>
+
+    <!-- Scripts & Styles -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        
+    </style>
+</head>
+
+
+<body class="bg-black text-white">
+    <nav class="fixed top-0 w-full z-50 py-4 navbar-glass shadow-lg bg-black/60 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+            <a href="#hero" class="text-white font-bold text-xl">Winstone Were</a>
+
+            <!-- Mobile toggle button -->
+            <button id="menuToggle" class="text-white md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Navigation Menu -->
+            <div id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-black/90 md:bg-transparent backdrop-blur-md md:backdrop-blur-none shadow-lg md:shadow-none space-y-2 md:space-y-0 md:space-x-8 px-6 md:px-0 py-4 md:py-0 z-40">
+                <a href="#about" data-section="about"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    About
+                </a>
+                <a href="#experience" data-section="experience"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Experience
+                </a>
+                <a href="#education" data-section="education"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Education
+                </a>
+                <a href="#projects" data-section="projects"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Projects
+                </a>
+                <a href="#certifications" data-section="certifications"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Certifications
+                </a>
+                <a href="#skills" data-section="skills"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Skills
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+
+        <section id="hero" class="hero-section" data-aos="fade-in">
+            <!-- Animated SVG Background -->
+            <svg class="animated-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"
+                preserveAspectRatio="none">
+                <rect id="sq1" x="20" y="50" width="40" height="40" />
+                <rect id="sq2" x="100" y="200" width="30" height="30" />
+                <rect id="sq3" x="200" y="100" width="50" height="50" />
+                <rect id="sq4" x="300" y="250" width="35" height="35" />
+                <rect id="sq5" x="400" y="70" width="60" height="60" />
+                <rect id="sq6" x="500" y="150" width="45" height="45" />
+                <rect id="sq7" x="600" y="220" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+                <rect id="sq10" x="900" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+                <rect id="sq14" x="150" y="500" width="60" height="60" />
+                <rect id="sq15" x="250" y="450" width="45" height="45" />
+                <rect id="sq16" x="350" y="550" width="35" height="35" />
+                <rect id="sq17" x="450" y="380" width="50" height="50" />
+                <rect id="sq18" x="550" y="480" width="40" height="40" />
+                <rect id="sq19" x="650" y="400" width="30" height="30" />
+                <rect id="sq20" x="750" y="520" width="60" height="60" />
+                <rect id="sq21" x="850" y="430" width="45" height="45" />
+                <rect id="sq22" x="950" y="600" width="35" height="35" />
+                <rect id="sq23" x="1050" y="500" width="50" height="50" />
+                <rect id="sq24" x="1150" y="650" width="40" height="40" />
+            </svg>
+
+
+            <!-- Parallax Background Elements -->
+            <div class="section-background-elements">
+                <div class="shape shape-large rellax" data-rellax-speed="-3" style="top: 10%; left: 10%;"></div>
+                <div class="shape shape-medium rellax" data-rellax-speed="2" style="bottom: 20%; right: 15%;"></div>
+                <div class="shape shape-small rellax" data-rellax-speed="-1" style="top: 40%; right: 5%;"></div>
+                <div class="shape shape-large rellax" data-rellax-speed="1" style="bottom: 5%; left: 5%;"></div>
+            </div>
+
+            <!-- Hero Text Content -->
+            <div class="section-content hero-text-container">
+                <h1 class="text-6xl md:text-7xl font-extrabold uppercase tracking-tight text-blue-400 mb-6 leading-tight rellax"
+                    data-rellax-speed="2">
+                    Amaumo Winstone Were
+                </h1>
+                <p class="text-2xl md:text-3xl text-gray-200 mb-8 max-w-3xl mx-auto rellax" data-rellax-speed="1.5">
+                    Innovating at the intersection of <strong>IoT, Web, and Mobile Development</strong>. Crafting robust
+                    and
+                    intelligent solutions with a passion for cutting-edge technology.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-xl mb-12 rellax" data-rellax-speed="1">
+                    <a href="mailto:stoniedev@gmail.com"
+                        class="flex items-center text-white hover:text-blue-400 transition duration-300">
+                        <i data-lucide="mail" class="w-6 h-6 mr-2"></i> stoniedev@gmail.com
+                    </a>
+                    <a href="tel:+254729291438"
+                        class="flex items-center text-white hover:text-blue-400 transition duration-300">
+                        <i data-lucide="phone" class="w-6 h-6 mr-2"></i> +254729291438
+                    </a>
+                    <a href="#" class="flex items-center text-white hover:text-blue-400 transition duration-300"
+                        target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="linkedin" class="w-6 h-6 mr-2"></i> LinkedIn
+                    </a>
+                    <a href="#" class="flex items-center text-white hover:text-blue-400 transition duration-300"
+                        target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github" class="w-6 h-6 mr-2"></i> GitHub
+                    </a>
+                </div>
+                <a href="#experience"
+                    class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg rellax"
+                    data-rellax-speed="0.5">
+                    Explore My Work <i data-lucide="arrow-down" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+              <section id="about" class="w-fulltext-white py-24 px-6 relative overflow-hidden">
+
+            <!-- Main Content -->
+            <div class="relative z-10 text-center px-6 md:px-20 lg:px-32">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mb-6 uppercase tracking-tight">About Me</h2>
+
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-4xl mx-auto">
+                    I'm passionate about building <strong>real-world solutions</strong> that make technology more
+                    useful,
+                    accessible, and human. Whether I'm coding up IoT firmware, designing sleek mobile apps, or solving
+                    performance bottlenecks — I thrive at the intersection of <strong>creativity and logic</strong>.
+                </p>
+
+                <p class="text-lg text-gray-400 leading-relaxed mb-12 max-w-3xl mx-auto">
+                    I value <em>clean code</em>, <em>curiosity</em>, and <em>collaboration</em>. Beyond the keyboard, I
+                    enjoy
+                    deep dives into hardware, reverse engineering fun problems, and sometimes sketching out product
+                    ideas
+                    over a strong cup of Kenyan coffee ☕.
+                </p>
+
+                <!-- Fun Skill Highlights -->
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-400 max-w-4xl mx-auto">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="settings" class="w-5 h-5 text-blue-400"></i> Problem Solver
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="zap" class="w-5 h-5 text-blue-400"></i> Fast Learner
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="handshake" class="w-5 h-5 text-blue-400"></i> Collaborative
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="code-2" class="w-5 h-5 text-blue-400"></i> Clean Coder
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="coffee" class="w-5 h-5 text-blue-400"></i> Coffee Thinker
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="rocket" class="w-5 h-5 text-blue-400"></i> Tech Explorer
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="box-select" class="w-5 h-5 text-blue-400"></i> UI/UX Curator
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-5 h-5 text-blue-400"></i> Lifelong Learner
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Global Glowing Backgrounds -->
+        <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+            <div
+                class="absolute w-[50rem] h-[50rem] bg-purple-600 opacity-20 rounded-full blur-[180px] top-[-10%] left-[-10%]">
+            </div>
+            <div
+                class="absolute w-[50rem] h-[50rem] bg-blue-600 opacity-20 rounded-full blur-[180px] bottom-[-10%] right-[-10%]">
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="script.js"></script>
+        <script>
+            lucide.createIcons();
+            const toggle = document.getElementById("menuToggle");
+            const menu = document.getElementById("menu");
+
+            toggle.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+
+            AOS.init({
+                duration: 1000,
+                once: true,
+                delay: 100,
+            });
+            lucide.createIcons();
+
+            // Initialize Rellax for all elements with the 'rellax' class
+            if (window.innerWidth > 768) {
+                new Rellax('.rellax', {
+                    speed: -2,
+                    center: true,
+                    round: true,
+                    vertical: true,
+                    horizontal: false
+                });
+            }
+
+            const squareIDs = ["sq1", "sq2", "sq3", "sq4", "sq5", "sq6", "sq7", "sq8", "sq9", "sq10", "sq11", "sq12", "sq13", "sq14", "sq15", "sq16", "sq17", "sq18", "sq19", "sq20", "sq21", "sq22", "sq23", "sq24"];
+
+            squareIDs.forEach((id, index) => {
+                anime({
+                    targets: `#${id}`,
+                    translateY: [
+                        { value: -20, duration: 2000 },
+                        { value: 20, duration: 2000 }
+                    ],
+                    easing: "easeInOutSine",
+                    direction: "alternate",
+                    loop: true,
+                    delay: index * 200
+                });
+            });
+            // Navbar active link logic
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-link');
+            const nav = document.querySelector('nav'); // Get the navbar element once
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const scrollY = window.pageYOffset;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - nav.offsetHeight - 50; // Adjust for navbar height and a small buffer
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        current = sectionId;
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Initial check for active link on page load
+            window.dispatchEvent(new Event('scroll'));
+        </script>
+    </main>
+</body>
+
+</html>
