@@ -5,7 +5,7 @@
 - **Full Name**: Debra Juma  
 - **Admission Number**: 123456  
 - **GitHub Username**: DebraJuma  
-- **Email**: debra.juma4@strathmore.edu
+- **Email**: debra.juma@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
