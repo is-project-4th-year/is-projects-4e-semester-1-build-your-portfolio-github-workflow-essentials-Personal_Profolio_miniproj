@@ -35,10 +35,38 @@
 </section>
 
   <!-- Projects Section goes here -->
+<section id="projects">
+  <h2>My Projects</h2>
+  <ul>
+    <li><strong>CultureLink:</strong> Cultural recommender app</li>
+    <li><strong>Afrilink:</strong> Smart travel planner</li>
+  </ul>
+</section>
 
   <!-- Contact Form goes here -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  alert("Thank you for your message!");
+});
+</script>
+
 
   <!-- Footer goes here -->
+<footer>
+  <p>&copy; 2025 Jamie Nangulu. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
