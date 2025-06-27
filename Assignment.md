@@ -63,8 +63,8 @@
 ### A. Milestones and Issues
 
 ```markdown
-![Milestones and Issues](milestone.png)
-![Milestones and Issues](issues.png)
+![Milestones and Issues](images/milestone.png)
+![Milestones and Issues](images/issues.png)
 
 ```
 
@@ -72,18 +72,18 @@
 
 ### B. Project Board
 ```markdown
-![project board](project.png)
+![project board](images/project.png)
 ```
 
 
 ### C. Branching
 ```markdown
-![Branching](branches.png)
+![Branching](images/branches.png)
 ```
 
 ### D. Pull Requests
 ```markdown
-![Pull Requests](pull.png)
+![Pull Requests](images/pull.png)
 
 ```
 
