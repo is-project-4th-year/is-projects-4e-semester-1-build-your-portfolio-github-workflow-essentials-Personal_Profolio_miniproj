@@ -5,12 +5,12 @@
 - **Full Name**: Debra Juma  
 - **Admission Number**: 123456  
 - **GitHub Username**: DebraJuma  
-- **Email**: debra.juma4@strathmore.edu
+- **Email**: debra.juma@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
 - **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+  https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-DebraJuma/
 
 ## 3. Learnings from the Git Crash Program
 
@@ -58,40 +58,39 @@
 
 ## 4. Screenshots of Key GitHub Features
 
-```
 
 ### A. Milestones and Issues
 
-```markdown
+
 ![Milestones and Issues](images/milestone.png)
 ![Milestones and Issues](images/issues.png)
 
-```
 
-- Screenshot showing your milestone(s) and the issues linked to it.
+
+
 
 ### B. Project Board
-```markdown
+
 ![project board](images/project.png)
-```
+
 
 
 ### C. Branching
-```markdown
+
 ![Branching](images/branches.png)
-```
+
 
 ### D. Pull Requests
-```markdown
+
 ![Pull Requests](images/pull.png)
 
-```
+
 
 
 
 ### E. Merge Conflict Resolution
-```markdown
-![Merge Conflict Resolution](merge.png)
-```
+
+![Merge Conflict Resolution](images/merge.png)
+
 
 
