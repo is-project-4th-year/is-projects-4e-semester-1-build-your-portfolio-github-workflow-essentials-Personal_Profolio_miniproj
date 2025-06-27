@@ -2,10 +2,10 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Debra Juma  
+- **Admission Number**: 123456  
+- **GitHub Username**: DebraJuma  
+- **Email**: debra.juma4@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
@@ -16,53 +16,82 @@
 
 **What I Thought I'd Learn vs What I Actually Learned**
 
-Write about **4 things** you expected to learn during the Git crash course (yes, we all came in with some big hopes 😅).
-For each one, tell us:
+### Concept: GitHub Project Boards
 
-What you thought it would be like `(Expectation 👀)`
+**Expectation 👀**: I thought project boards were meant only for big professional teams working on massive projects.
 
-What you actually learned `(Reality 😅)`
+**Reality 😅**: They turned out to be like simple visual to-do lists where I could track my tasks easily and move them as I progressed.
 
-And how it helped with your personal portfolio project 💻
+**Impact 💡**: Helped me stay organized and motivated, especially when building each section of my portfolio step by step.
 
-**Example format:**
+---
 
-`Concept: GitHub Project Boards`
+### Concept: Branching
 
-`Expectation 👀`: Looked like a complicated tool only teams use.
+**Expectation 👀**: I expected branching to be unnecessary for one-person projects and only useful when multiple developers are working together.
 
-`Reality 😅`: It’s actually a visual to-do list! Dragging my tasks from “To do” to “Done” felt so satisfying.
+**Reality 😅**: Branches actually gave me a safe place to try out new designs or content without affecting my main site.
 
-`Impact 💡`: Helped me stay organized and track my progress on the portfolio, especially when I had lots of sections to build.
+**Impact 💡**: I could confidently experiment with styling or new sections in separate branches, then merge when happy with my changes.
 
+---
+
+### Concept: Pull Requests (PRs)
+
+**Expectation 👀**: I assumed pull requests were overly formal, and only teams needed them for code reviews.
+
+**Reality 😅**: PRs were super useful even solo — they gave me a clear overview of what each branch changed, and a way to merge it cleanly.
+
+**Impact 💡**: Made my workflow much clearer and allowed me to track changes while documenting my progress.
+
+---
+
+### Concept: Merge Conflicts
+
+**Expectation 👀**: I thought merge conflicts would be confusing, and I worried they would break my entire project.
+
+**Reality 😅**: They were actually pretty simple to resolve — GitHub highlighted the conflicts and allowed me to choose what I wanted to keep.
+
+**Impact 💡**: Gave me confidence that I could fix issues myself and continue working smoothly, even if branches overlapped.
+
+---
 
 ## 4. Screenshots of Key GitHub Features
 
-Include screenshots that demonstrate how you used GitHub to manage your project. For each screenshot, write a short caption explaining what it shows.
-
-> Upload the screenshots to your GitHub repository and reference them here using Markdown image syntax:
-> (you could just simply copy and paste the image into the Assignment.md)
-
-```markdown
-![Caption](path/to/your/image.png)
 ```
 
 ### A. Milestones and Issues
 
+```markdown
+![Milestones and Issues](milestone.png)
+![Milestones and Issues](issues.png)
+
+```
+
 - Screenshot showing your milestone(s) and the issues linked to it.
 
 ### B. Project Board
+```markdown
+![project board](project.png)
+```
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
 
 ### C. Branching
-
-- Screenshot showing your branch list with meaningful naming.
+```markdown
+![Branching](branches.png)
+```
 
 ### D. Pull Requests
+```markdown
+![Pull Requests](pull.png)
 
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
+```
+
+
 
 ### E. Merge Conflict Resolution
+```markdown
+![Merge Conflict Resolution](merge.png)
+```
 
-- Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
+
