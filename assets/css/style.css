@@ -8,6 +8,16 @@ body {
 }
 
 /* Placeholder for other styles (to be added in branches) */
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Placeholder for other styles (to be added in branches) */
 .navbar {
   display: flex;
   justify-content: space-between;
