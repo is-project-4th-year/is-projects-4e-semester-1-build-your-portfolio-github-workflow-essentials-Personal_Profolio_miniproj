@@ -1,72 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
 </head>
 <body>
-  <!-- Header (Navbar) will go here -->
-<header>
-  <nav class="navbar">
-    <h1 class="logo">My Portfolio</h1>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact"></a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Jamie Khalayi Nangulu</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Hero Section goes here -->
-<section id="hero">
-  <div class="hero-content">
-    <h2>Welcome to My World</h2>
-    <p>I’m a tech enthusiast and developer. Let's build something great!</p>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Jamie Khalayi Nangulu</h1>
+            <p>Full Stack Developer & UI/UX Designer</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
 
-  <!-- About Section goes here -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hello! I'm Jamie, passionate about web development and innovation.</p>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div>
+                    <img src="https://via.placeholder.com/300x300/667eea/ffffff?text=Profile" alt="Profile Picture" class="profile-img">
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Jamie Khalayi</h3>
+                    <p>I'm a passionate full-stack developer with . I specialize in modern web technologies and love turning complex problems into simple, beautiful designs.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while sketching out my next big idea.</p>
+                    <p>I believe in writing clean, efficient code and creating user experiences that not only look great but also solve real-world problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects Section goes here -->
-<section id="projects">
-  <h2>My Projects</h2>
-  <ul>
-    <li><strong>CultureLink:</strong> Cultural recommender app</li>
-    <li><strong>Afrilink:</strong> Smart travel planner</li>
-  </ul>
-</section>
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h4>Frontend Development</h4>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>Backend Development</h4>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Database Management</h4>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>UI/UX Design</h4>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Form goes here -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form id="contactForm">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>E-Commerce Platform</h4>
+                        <p>A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Task Management App</h4>
+                        <p>A collaborative task management application with real-time updates, built using Vue.js and Firebase. Includes team collaboration features and progress tracking.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Data Visualization Dashboard</h4>
+                        <p>An interactive dashboard for data visualization built with D3.js and React. Features dynamic charts, filtering capabilities, and responsive design.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h4>Let's Work Together</h4>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>jamie.khalayi@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+254768280226</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Naairobi, Kenya</span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error" id="nameError">Please enter your name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error" id="emailError">Please enter a valid email</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <div class="error" id="messageError">Please enter your message</div>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 Jamie Khalayi. All rights reserved.</p>
+        </div>
+    </footer>
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  alert("Thank you for your message!");
-});
-</script>
-
-
-  <!-- Footer goes here -->
-<footer>
-  <p>&copy; 2025 Jamie Nangulu. All rights reserved.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
