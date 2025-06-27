@@ -5,57 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
-<body>
-    <section class="about-section">
-        <div class="container">
-            <h1>About Me</h1>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh;">
+    <section class="about-section" style="padding: 80px 20px; background: rgba(255, 255, 255, 0.95); margin: 40px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h1 style="text-align: center; font-size: 3rem; margin-bottom: 60px; color: #2c3e50; font-weight: 700; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">About Me</h1>
             
-            <div class="about-content">
-                <div class="profile-image">
-                    <img src="" alt="Profile Picture" />
+            <div class="about-content" style="display: flex; gap: 60px; align-items: flex-start; flex-wrap: wrap;">
+                <div class="profile-image" style="flex: 0 0 300px; text-align: center;">
+                    <div style="width: 300px; height: 300px; border-radius: 50%; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3); position: relative; overflow: hidden;">
+                        <span style="color: white; font-size: 4rem; font-weight: bold;">PM</span>
+                    </div>
                 </div>
                 
-                <div class="about-text">
-                    <h2>Hey, I'm Philip M</h2>
-                    <p class="intro">
+                <div class="about-text" style="flex: 1; min-width: 300px;">
+                    <h2 style="font-size: 2.5rem; color: #2c3e50; margin-bottom: 20px; font-weight: 600;">Hey, I'm Philip M</h2>
+                    <p class="intro" style="font-size: 1.2rem; color: #555; margin-bottom: 25px; line-height: 1.8; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 20px; border-radius: 15px; border-left: 5px solid #667eea;">
                         I'm passionate in Machine Learning with a year of experience in the field. 
                         I love creating innovative solutions and bringing ideas to life through Python and C++.
                     </p>
-                    <p class="bio">
+                    <p class="bio" style="font-size: 1.1rem; color: #666; margin-bottom: 30px; line-height: 1.7; padding: 20px; background: rgba(102, 126, 234, 0.05); border-radius: 12px;">
                         Currently, I am a student at Strathmore University, where I am honing my skills in computer science and machine learning.
                         My journey in tech started with a fascination for algorithms and data structures, which has now evolved into a deep interest in artificial intelligence.
                     </p>
                     
-                    <div class="education">
-                        <h3>Education</h3>
-                        <p>Bachelor of Science in Computer Science, Strathmore University</p>
-                        <p>High School Diploma, Strathmore School</p>
+                    <div class="education" style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); border: 1px solid rgba(102, 126, 234, 0.1);">
+                        <h3 style="color: #2c3e50; font-size: 1.5rem; margin-bottom: 20px; font-weight: 600; display: flex; align-items: center;">
+                            <span style="background: linear-gradient(135deg, #667eea, #764ba2); width: 6px; height: 30px; border-radius: 3px; margin-right: 15px; display: inline-block;"></span>
+                            Education
+                        </h3>
+                        <p style="margin: 15px 0; font-size: 1.1rem; color: #555; padding: 12px 0; border-bottom: 1px solid #f0f0f0;">
+                            <strong style="color: #2c3e50;">Bachelor of Science in Computer Science</strong><br>
+                            <span style="color: #667eea; font-weight: 500;">Strathmore University</span>
+                        </p>
+                        <p style="margin: 15px 0; font-size: 1.1rem; color: #555; padding: 12px 0;">
+                            <strong style="color: #2c3e50;">High School Diploma</strong><br>
+                            <span style="color: #667eea; font-weight: 500;">Strathmore School</span>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section style="padding: 60px 20px; background: rgba(255, 255, 255, 0.9); margin: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);">
         <div class="skills">
-            <div class="container">
-                <h3>Skills & Expertise</h3>
-                <ul class="skills-list">
-                    <li>Python</li>
-                    <li>Scikit-learn</li>
-                    <li>TensorFlow</li>
-                    <li>C++</li>
-                    <li>Machine Learning</li>
+            <div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+                <h3 style="font-size: 2.5rem; color: #2c3e50; margin-bottom: 40px; font-weight: 600; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Skills & Expertise</h3>
+                <ul class="skills-list" style="list-style: none; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 0; margin: 0;">
+                    <li style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 15px 30px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(102, 126, 234, 0.3)'">Python</li>
+                    <li style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 15px 30px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(102, 126, 234, 0.3)'">Scikit-learn</li>
+                    <li style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 15px 30px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(102, 126, 234, 0.3)'">TensorFlow</li>
+                    <li style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 15px 30px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(102, 126, 234, 0.3)'">C++</li>
+                    <li style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 15px 30px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(102, 126, 234, 0.3)'">Machine Learning</li>
                 </ul>
             </div>
+        </div>
     </section>
-    <section>
+
+    <section style="padding: 60px 20px; background: rgba(255, 255, 255, 0.95); margin: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08); text-align: center;">
         <div class="contact-cta">
-            <p>Let's connect and create something amazing together!</p>
-            <div class="contact-links">
-                <a href="mailto:philip.miroga@strathmore.edu">Email</a>
-                <a href="">LinkedIn</a>
-                <a href="https://github.com/Philip-O-M">GitHub</a>
+            <p style="font-size: 1.4rem; color: #2c3e50; margin-bottom: 30px; font-weight: 500;">Let's connect and create something amazing together!</p>
+            <div class="contact-links" style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                <a href="mailto:philip.miroga@strathmore.edu" style="text-decoration: none; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 15px 35px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3); transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.3)'">📧 Email</a>
+                <a href="" style="text-decoration: none; background: linear-gradient(135deg, #0077b5, #005885); color: white; padding: 15px 35px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 10px 25px rgba(0, 119, 181, 0.3); transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(0, 119, 181, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0, 119, 181, 0.3)'">💼 LinkedIn</a>
+                <a href="https://github.com/Philip-O-M" style="text-decoration: none; background: linear-gradient(135deg, #333, #555); color: white; padding: 15px 35px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 10px 25px rgba(51, 51, 51, 0.3); transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(51, 51, 51, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(51, 51, 51, 0.3)'">🐱 GitHub</a>
             </div>
         </div>
     </section>
