@@ -16,6 +16,10 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+        
+    </style>
 </head>
 
 
@@ -143,7 +147,7 @@
             </div>
         </section>
 
-        <section id="about" class="w-fulltext-white py-24 px-6 relative overflow-hidden">
+              <section id="about" class="w-fulltext-white py-24 px-6 relative overflow-hidden">
 
             <!-- Main Content -->
             <div class="relative z-10 text-center px-6 md:px-20 lg:px-32">
@@ -194,26 +198,91 @@
                 </div>
             </div>
         </section>
+        <!-- Global Glowing Backgrounds -->
+        <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+            <div
+                class="absolute w-[50rem] h-[50rem] bg-purple-600 opacity-20 rounded-full blur-[180px] top-[-10%] left-[-10%]">
+            </div>
+            <div
+                class="absolute w-[50rem] h-[50rem] bg-blue-600 opacity-20 rounded-full blur-[180px] bottom-[-10%] right-[-10%]">
+            </div>
+        </div>
 
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="script.js"></script>
+        <script>
+            lucide.createIcons();
+            const toggle = document.getElementById("menuToggle");
+            const menu = document.getElementById("menu");
 
+            toggle.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
 
+            AOS.init({
+                duration: 1000,
+                once: true,
+                delay: 100,
+            });
+            lucide.createIcons();
+
+            // Initialize Rellax for all elements with the 'rellax' class
+            if (window.innerWidth > 768) {
+                new Rellax('.rellax', {
+                    speed: -2,
+                    center: true,
+                    round: true,
+                    vertical: true,
+                    horizontal: false
+                });
+            }
+
+            const squareIDs = ["sq1", "sq2", "sq3", "sq4", "sq5", "sq6", "sq7", "sq8", "sq9", "sq10", "sq11", "sq12", "sq13", "sq14", "sq15", "sq16", "sq17", "sq18", "sq19", "sq20", "sq21", "sq22", "sq23", "sq24"];
+
+            squareIDs.forEach((id, index) => {
+                anime({
+                    targets: `#${id}`,
+                    translateY: [
+                        { value: -20, duration: 2000 },
+                        { value: 20, duration: 2000 }
+                    ],
+                    easing: "easeInOutSine",
+                    direction: "alternate",
+                    loop: true,
+                    delay: index * 200
+                });
+            });
+            // Navbar active link logic
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-link');
+            const nav = document.querySelector('nav'); // Get the navbar element once
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const scrollY = window.pageYOffset;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - nav.offsetHeight - 50; // Adjust for navbar height and a small buffer
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        current = sectionId;
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Initial check for active link on page load
+            window.dispatchEvent(new Event('scroll'));
+        </script>
     </main>
-    <!-- Global Glowing Backgrounds -->
-    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-        <div
-            class="absolute w-[50rem] h-[50rem] bg-purple-600 opacity-20 rounded-full blur-[180px] top-[-10%] left-[-10%]">
-        </div>
-        <div
-            class="absolute w-[50rem] h-[50rem] bg-blue-600 opacity-20 rounded-full blur-[180px] bottom-[-10%] right-[-10%]">
-        </div>
-    </div>
-
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="script.js"></script>
-    <script>
-
-
-    </script>
 </body>
 
 </html>
