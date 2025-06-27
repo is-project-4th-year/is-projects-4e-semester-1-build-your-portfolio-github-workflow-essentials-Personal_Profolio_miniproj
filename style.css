@@ -1,0 +1,329 @@
+/* File: style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: #2c3e50;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.profile-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-initials {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.intro {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #667eea;
+}
+
+.bio {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    padding: 20px;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 12px;
+}
+
+.education {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.education h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.education-accent {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    width: 6px;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.education-item {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #555;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.education-item-last {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #555;
+    padding: 12px 0;
+}
+
+.education-item strong,
+.education-item-last strong {
+    color: #2c3e50;
+}
+
+.institution {
+    color: #667eea;
+    font-weight: 500;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.skills .container {
+    text-align: center;
+}
+
+.skills h3 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.contact-cta p {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.contact-links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.contact-email {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.contact-email:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+.contact-linkedin {
+    background: linear-gradient(135deg, #0077b5, #005885);
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 119, 181, 0.3);
+}
+
+.contact-linkedin:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 119, 181, 0.4);
+}
+
+.contact-github {
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    box-shadow: 0 10px 25px rgba(51, 51, 51, 0.3);
+}
+
+.contact-github:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(51, 51, 51, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section,
+    .skills-section,
+    .contact-section {
+        margin: 20px;
+        padding: 40px 20px;
+    }
+    
+    .about-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    
+    .about-content {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-image {
+        flex: none;
+    }
+    
+    .profile-circle {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .profile-initials {
+        font-size: 3rem;
+    }
+    
+    .about-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .skills h3 {
+        font-size: 2rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .contact-links a {
+        width: 200px;
+        text-align: center;
+    }
+}
