@@ -1,37 +1,54 @@
-/* Reset default margins */
+/* Reset default margins and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styling with soft gradient background */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background: linear-gradient(135deg, #e0f7fa, #fffde7); /* Teal to light yellow */
+  color: #2e2e2e;
   line-height: 1.6;
   padding: 20px;
 }
 
+/* Header with a vibrant color and shadow */
 header {
   text-align: center;
   padding: 40px 0;
-  background-color: #222;
+  background-color: #009688; /* Teal */
   color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Intro section card-style */
 .intro {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffffcc; /* White with slight transparency */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 150, 136, 0.1); /* Subtle teal shadow */
   text-align: center;
 }
 
+/* Footer with soft blue-grey and spacing */
 footer {
   text-align: center;
   margin-top: 60px;
-  color: #777;
+  padding: 20px 0;
+  color: #607d8b; /* Blue-grey text */
+  background-color: #e0f2f1; /* Very light teal */
+  font-size: 0.9rem;
 }
