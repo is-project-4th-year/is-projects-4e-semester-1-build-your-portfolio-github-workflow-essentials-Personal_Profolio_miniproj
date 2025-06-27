@@ -1,0 +1,52 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Placeholder for other styles (to be added in branches) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+#hero {
+  background-color: #0077cc;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+#about {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+#projects {
+  padding: 2rem;
+  text-align: center;
+}
