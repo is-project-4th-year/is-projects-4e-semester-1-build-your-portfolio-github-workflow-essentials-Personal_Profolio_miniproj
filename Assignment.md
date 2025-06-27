@@ -2,38 +2,29 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+
+- **Full Name**: Islam Faruk Jeizan
+- **GitHub Username**: ifj123
+- **Email**: Faruk.islam@strathmore.edu
+
 
 ## 2. Deployed Portfolio Link
 
 - **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-ifj123/
 
 ## 3. Learnings from the Git Crash Program
 
-**What I Thought I'd Learn vs What I Actually Learned**
 
-Write about **4 things** you expected to learn during the Git crash course (yes, we all came in with some big hopes 😅).
-For each one, tell us:
+Branching: Helped me separate features by creating dedicated branches for each task or section (like the contact form or footer), which kept my main branch stable and conflict-free during development.
 
-What you thought it would be like `(Expectation 👀)`
+Commit Types: Taught me how to use clear and meaningful commit messages like feat, fix, and docs. This improved the readability of my project history and made it easier to understand what each change was about.
 
-What you actually learned `(Reality 😅)`
+Pull Requests: Showed me how to propose changes from feature branches to main, request reviews, and merge cleanly. It also allowed me to link commits directly to issues, keeping everything traceable and organized.
 
-And how it helped with your personal portfolio project 💻
+Issue Tracking and Project Boards: Enabled me to plan and track tasks using GitHub Issues and project boards. I could break down features into smaller parts, move them through "To Do", "In Progress", and "Done", which improved my workflow and productivity.
 
-**Example format:**
 
-`Concept: GitHub Project Boards`
-
-`Expectation 👀`: Looked like a complicated tool only teams use.
-
-`Reality 😅`: It’s actually a visual to-do list! Dragging my tasks from “To do” to “Done” felt so satisfying.
-
-`Impact 💡`: Helped me stay organized and track my progress on the portfolio, especially when I had lots of sections to build.
 
 
 ## 4. Screenshots of Key GitHub Features
@@ -49,20 +40,25 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 
 ### A. Milestones and Issues
 
-- Screenshot showing your milestone(s) and the issues linked to it.
+![Screenshot 2025-06-26 233436](https://github.com/user-attachments/assets/db50dc78-b4fb-4e1b-a374-22c9dad8181a)
+
 
 ### B. Project Board
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
+![Screenshot 2025-06-26 233600](https://github.com/user-attachments/assets/a3faca1f-d085-432b-8481-d465b5291136)
+
 
 ### C. Branching
 
-- Screenshot showing your branch list with meaningful naming.
+![image](https://github.com/user-attachments/assets/f9b0c72a-6cce-4af0-85e9-9ac9f5996c37)
+
+
 
 ### D. Pull Requests
 
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
+![image](https://github.com/user-attachments/assets/aa2b14f5-f0de-48f1-a047-c577315761ad)
+
 
 ### E. Merge Conflict Resolution
 
-- Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
+
