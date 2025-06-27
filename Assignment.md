@@ -61,4 +61,8 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 
 ### E. Merge Conflict Resolution
 
+![image](https://github.com/user-attachments/assets/26489443-9503-4b20-87f2-c587b4f301f3)
+![Screenshot 2025-06-28 000405](https://github.com/user-attachments/assets/5eb32c37-b274-4b00-9590-3111347cf3d3)
+![Screenshot 2025-06-27 235833](https://github.com/user-attachments/assets/6bfbb872-396f-4f00-8944-b2b08d46f581)
+
 
