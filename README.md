@@ -96,6 +96,18 @@ Before submitting your project, ensure the following:
 - [ ] Demonstrated conflict resolution (Simulate atleast one)
 - [ ] Deployed the portfolio online
 - [ ] Completed and updated the `Assignment.md` file which will be marked and graded
+# My Personal Portfolio
+
+This is a personal website showcasing my skills, projects, and contact information. Built using HTML and styled with basic CSS.
+
+## Features
+- Landing page with introduction
+- Responsive design (coming soon)
+- Project gallery (planned)
+
+## GitHub Workflow Practiced
+- Branching, pull requests, issues, commit types
+
 
 
 
