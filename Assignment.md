@@ -2,9 +2,11 @@
 
 ## 1. Student Details
 
+
 - **Full Name**: Islam Faruk Jeizan
 - **GitHub Username**: ifj123
 - **Email**: Faruk.islam@strathmore.edu
+
 
 ## 2. Deployed Portfolio Link
 
@@ -13,6 +15,7 @@ https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essen
 
 ## 3. Learnings from the Git Crash Program
 
+
 Branching: Helped me separate features by creating dedicated branches for each task or section (like the contact form or footer), which kept my main branch stable and conflict-free during development.
 
 Commit Types: Taught me how to use clear and meaningful commit messages like feat, fix, and docs. This improved the readability of my project history and made it easier to understand what each change was about.
@@ -20,6 +23,7 @@ Commit Types: Taught me how to use clear and meaningful commit messages like fea
 Pull Requests: Showed me how to propose changes from feature branches to main, request reviews, and merge cleanly. It also allowed me to link commits directly to issues, keeping everything traceable and organized.
 
 Issue Tracking and Project Boards: Enabled me to plan and track tasks using GitHub Issues and project boards. I could break down features into smaller parts, move them through "To Do", "In Progress", and "Done", which improved my workflow and productivity.
+
 
 
 
