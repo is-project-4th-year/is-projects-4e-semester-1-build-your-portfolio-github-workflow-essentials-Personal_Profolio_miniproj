@@ -2,67 +2,76 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Maryfancy Kariuki  
+- **Admission Number**: 150828 
+- **GitHub Username**: fancykariuki  
+- **Email**: <maryfancy.kariuki@strathmore.edu>  
+
+---
 
 ## 2. Deployed Portfolio Link
 
 - **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+ <https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-fancykariuki/>
+
+---
 
 ## 3. Learnings from the Git Crash Program
 
 **What I Thought I'd Learn vs What I Actually Learned**
 
-Write about **4 things** you expected to learn during the Git crash course (yes, we all came in with some big hopes 😅).
-For each one, tell us:
+---
 
-What you thought it would be like `(Expectation 👀)`
+### Concept: GitHub Project Boards
 
-What you actually learned `(Reality 😅)`
+- **Expectation 👀**: Looked like something used by large teams for tracking big software projects.
+- **Reality 😅**: It's just a super-friendly task tracker! Dragging issues from “To Do” to “Done” felt like real progress.
+- **Impact 💡**: Helped me stay on track and break down my project into small achievable steps.
 
-And how it helped with your personal portfolio project 💻
+---
 
-**Example format:**
+### Concept: Branching
 
-`Concept: GitHub Project Boards`
+- **Expectation 👀**: I thought it was only for working on huge codebases.
+- **Reality 😅**: It’s as simple as creating a copy of your code to safely try new features.
+- **Impact 💡**: Allowed me to work on my profile section without worrying about breaking the main website.
 
-`Expectation 👀`: Looked like a complicated tool only teams use.
+---
 
-`Reality 😅`: It’s actually a visual to-do list! Dragging my tasks from “To do” to “Done” felt so satisfying.
+### Concept: Pull Requests (PRs)
 
-`Impact 💡`: Helped me stay organized and track my progress on the portfolio, especially when I had lots of sections to build.
+- **Expectation 👀**: Sounded like a complex code review system.
+- **Reality 😅**: It's just a clean way to suggest changes and ask for approval before changing the main codebase.
+- **Impact 💡**: Helped me document and explain the work I did on each feature, and kept my work clean before merging to `main`.
 
+---
+
+### Concept: Merge Conflicts
+
+- **Expectation 👀**: Thought it would crash everything or be impossible to fix.
+- **Reality 😅**: Just needed to read and resolve the conflicting parts.
+- **Impact 💡**: I intentionally triggered and resolved one conflict when two branches edited the same `index.html`.
+
+---
 
 ## 4. Screenshots of Key GitHub Features
 
-Include screenshots that demonstrate how you used GitHub to manage your project. For each screenshot, write a short caption explaining what it shows.
-
-> Upload the screenshots to your GitHub repository and reference them here using Markdown image syntax:
-> (you could just simply copy and paste the image into the Assignment.md)
-
-```markdown
-![Caption](path/to/your/image.png)
-```
-
 ### A. Milestones and Issues
 
-- Screenshot showing your milestone(s) and the issues linked to it.
+![Milestones and Issues](images/milestones-issues.png)  
 
 ### B. Project Board
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
+![Project Board](images/project-board.png)  
 
 ### C. Branching
 
-- Screenshot showing your branch list with meaningful naming.
+![Branching](images/branch-list.png)  
 
 ### D. Pull Requests
 
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
+![Pull Requests](images/pull-requests.png)  
 
 ### E. Merge Conflict Resolution
 
-- Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
+![Merge Conflict](images/merge-conflict.png)  
