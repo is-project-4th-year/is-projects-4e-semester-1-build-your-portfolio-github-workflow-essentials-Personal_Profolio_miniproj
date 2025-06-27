@@ -1,120 +1,113 @@
-// Performance-Optimized Profile Picture Fade-in Animation
-// Uses Intersection Observer API, requestAnimationFrame, and CSS transforms
+// Performance Optimized Profile Picture Fade-in Animation
+// This version uses requestAnimationFrame and modern techniques for better performance
 
-class ProfileAnimator {
-    constructor() {
-        this.profileImage = null;
-        this.observer = null;
-        this.isAnimated = false;
-        this.rafId = null;
-        
-        this.init();
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    const profileCircle = document.querySelector('.profile-circle');
     
-    init() {
-        // Wait for DOM to be ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', () => this.setup());
+   
+    let animationId = null;
+    let startTime = null;
+    const duration = 3000; 
+    
+    // Use transform3d to enable hardware acceleration
+    profileCircle.style.opacity = '0';
+    profileCircle.style.transform = 'scale3d(0.8, 0.8, 1)';
+    profileCircle.style.willChange = 'opacity, transform'; 
+    profileCircle.style.transition = 'none';
+    
+
+    const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+    
+   
+    function animate(currentTime) {
+       
+        if (!startTime) {
+            startTime = currentTime;
+        }
+        
+       
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        
+        const easedProgress = easeOutCubic(progress);
+        
+       
+        const opacity = easedProgress;
+        const scale = 0.8 + (easedProgress * 0.2); 
+        
+        
+        profileCircle.style.cssText = `
+            opacity: ${opacity};
+            transform: scale3d(${scale}, ${scale}, 1);
+            will-change: opacity, transform;
+            transition: none;
+        `;
+        
+        
+        if (progress < 1) {
+            animationId = requestAnimationFrame(animate);
         } else {
-            this.setup();
+            
+            completeAnimation();
         }
     }
     
-    setup() {
-        this.profileImage = document.querySelector('.profile-circle');
+    // Cleanup function
+    function completeAnimation() {
         
-        if (!this.profileImage) {
-            console.warn('Profile image not found');
-            return;
+        if (animationId) {
+            cancelAnimationFrame(animationId);
+            animationId = null;
         }
         
-        this.profileImage.classList.add('profile-fade-initial');
         
-        this.createIntersectionObserver();
+        profileCircle.style.cssText = `
+            opacity: 1;
+            transform: scale3d(1, 1, 1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: auto;
+        `;
         
-        this.addHoverEffects();
+        console.log('Optimized fade-in animation completed');
     }
     
-    createIntersectionObserver() {
-        const options = {
-            root: null, 
-            rootMargin: '50px',
-            threshold: 0.1 
-        };
-        
-        this.observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !this.isAnimated) {
-                    this.animateIn();
+    // Use Intersection Observer for performance (only animate when visible)
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                   
+                    observer.unobserve(entry.target);
+                    requestAnimationFrame(animate);
                 }
             });
-        }, options);
-        
-        this.observer.observe(this.profileImage);
-    }
-    
-    animateIn() {
-        if (this.isAnimated) return;
-        
-        this.isAnimated = true;
-        
-        // Use requestAnimationFrame for smooth animations
-        this.rafId = requestAnimationFrame(() => {
-            
-            setTimeout(() => {
-                this.profileImage.classList.add('profile-fade-in');
-                
-                
-                this.profileImage.addEventListener('animationend', this.handleAnimationEnd.bind(this), { once: true });
-                
-            }, 300); 
-
+        }, {
+            rootMargin: '50px' 
         });
-        this.observer.disconnect();
+        
+        observer.observe(profileCircle);
+    } else {
+       
+        requestAnimationFrame(animate);
     }
     
-    handleAnimationEnd(event) {
-        if (event.animationName === 'profileFadeIn') {
-           
-            this.profileImage.classList.add('profile-bounce-in');
+    // Performance monitoring (optional - remove in production)
+    if (typeof performance !== 'undefined' && performance.mark) {
+        performance.mark('profile-animation-start');
+        
+        const originalComplete = completeAnimation;
+        completeAnimation = function() {
+            performance.mark('profile-animation-end');
+            performance.measure('profile-animation-duration', 'profile-animation-start', 'profile-animation-end');
+            originalComplete();
+        };
+    }
+    
+    // Cleanup on page unload to prevent memory leaks
+    window.addEventListener('beforeunload', function() {
+        if (animationId) {
+            cancelAnimationFrame(animationId);
         }
-    }
-    
-    addHoverEffects() {
-        // Use CSS classes instead of inline styles for better performance
-        this.profileImage.addEventListener('mouseenter', this.handleMouseEnter.bind(this), { passive: true });
-        this.profileImage.addEventListener('mouseleave', this.handleMouseLeave.bind(this), { passive: true });
-    }
-    
-    handleMouseEnter() {
-        this.profileImage.classList.add('profile-hover');
-    }
-    
-    handleMouseLeave() {
-        this.profileImage.classList.remove('profile-hover');
-    }
-    
-    // Clean up method for better memory management
-    destroy() {
-        if (this.observer) {
-            this.observer.disconnect();
-        }
-        if (this.rafId) {
-            cancelAnimationFrame(this.rafId);
-        }
-        if (this.profileImage) {
-            this.profileImage.removeEventListener('mouseenter', this.handleMouseEnter);
-            this.profileImage.removeEventListener('mouseleave', this.handleMouseLeave);
-        }
-    }
-}
-
-// Initialize the animator
-const profileAnimator = new ProfileAnimator();
-
-// Clean up on page unload for better memory management
-window.addEventListener('beforeunload', () => {
-    if (profileAnimator) {
-        profileAnimator.destroy();
-    }
+    });
 });
