@@ -223,7 +223,7 @@ footer {
 }
 
 .about-text {
-  max-width: 600px;
+  max-width: 900px;
   font-size: 1rem;
   color: #444;
   line-height: 1.6;
@@ -234,6 +234,91 @@ footer {
   list-style: disc;
   margin-top: 0.5rem;
 }
+
+#skills-funfacts {
+  background-color: #f8fafc;
+  padding: 4rem 2rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.info-wrapper {
+  margin: 0 auto;
+  padding: 0 3rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-top: -2rem;
+}
+
+.section-intro {
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin-top: -0.5rem;
+}
+
+.info-grid {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(500px, 2fr)); */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-card li {
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+  color: #334155;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.info-card li::before {
+  content: "•";
+  color: #0ea5e9;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
 
 /* ===== Projects Section (Improved) ===== */
 .section-title {
