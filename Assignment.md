@@ -9,7 +9,7 @@
 ## 2. Deployed Portfolio Link
 
 - **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+  _https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-MichaelSimiyu-Truth/_
 
 ## 3. Learnings from the Git Crash Program
 
