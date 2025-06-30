@@ -9,7 +9,7 @@
 ## 2. Deployed Portfolio Link
 
 - **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+ (https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-10krhinooo/)
 
 ## 3. Learnings from the Git Crash Program
 
@@ -26,15 +26,15 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 
 ### A. Milestones and Issues
 
-![1750875832073](image/Assignment/1750875832073.png)
+![1751267118850](image/Assignment/1751267118850.png)
 
 - The opened issues of the first Milestone.  
 
-![1750875888989](image/Assignment/1750875888989.png)
+![1751267142243](image/Assignment/1751267142243.png)
 
 - The closed issues for the first milestone
 
-![1750875775827](image/Assignment/1750875775827.png)
+![1751267047149](image/Assignment/1751267047149.png)
 
 - last milestone Issues
 
@@ -46,7 +46,7 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 
 ### C. Branching
 
-- ![1750874690684](image/Assignment/1750874690684.png)
+- ![1751051896219](image/Assignment/1751051896219.png)
 
 ### D. Pull Requests
 
